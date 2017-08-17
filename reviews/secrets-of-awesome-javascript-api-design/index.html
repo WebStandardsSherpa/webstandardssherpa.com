@@ -1,0 +1,521 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" id="webstandardssherpa_com">
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Language" content="en"/>
+	
+
+	<title>Secrets of Awesome JavaScript API Design - Web Standards Sherpa</title>
+	<meta name="robots" content="index,follow,archive" />
+	 <link rel="canonical_url" href="index.html" /> 
+	<meta name='description' content='Great API design equals great user experience. Brandon details how JavaScript API builders can design great experiences by following principles found in art, architecture and industrial design.' />
+	<meta name='DC.description' content='Great API design equals great user experience. Brandon details how JavaScript API builders can design great experiences by following principles found in art, architecture and industrial design.' />
+	<meta name='keywords' content='Design / UX,Javascript' />
+	<meta name='DC.subject' content='Design / UX,Javascript' />
+
+	<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
+	<link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
+	<meta name="DC.title" content="Secrets of Awesome JavaScript API Design - Web Standards Sherpa" />
+	<meta name="DC.creator" content="Brandon Satrom" />
+	<meta name="DC.publisher" content="The Web Standards Project" />
+	<meta name="DC.date.created" scheme="DCTERMS.W3CDTF" content="2015-12-07T14:46:35-05:00" />
+	<meta name="DC.date.modified" scheme="DCTERMS.W3CDTF" content="1453-05-17T18:00:00-05:00" />
+	<meta name="DC.date.valid" scheme="DCTERMS.W3CDTF" content="2015-12-13T16:46:35-05:00" />
+	<meta name="DC.type" scheme="DCTERMS.DCMIType" content="Text" />
+	<meta name="DC.rights" scheme="DCTERMS.URI" content="(cc) Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License">
+	<meta name="Copyright" content="(cc) Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License"/>
+	<meta name="DC.format" content="text/html" />
+	<meta name="DC.identifier" scheme="DCTERMS.URI" content="http://webstandardssherpa.com/reviews/secrets-of-awesome-javascript-api-design/" />
+	<meta name="MSSmartTagsPreventParsing" content="true"/>
+	<meta name="Rating" content="General"/>
+
+	<meta property="og:title" content="Secrets of Awesome JavaScript API Design"/> 
+	<meta property="og:type" content="article"/> 
+	<meta property="og:url" content="http://webstandardssherpa.com/reviews/secrets-of-awesome-javascript-api-design/"/> 
+	<meta property="og:image" content="http://webstandardssherpa.com/i/fb-backpack.png"/> 
+	<meta property="og:site_name" content="Web Standards Sherpa"/> 
+	<meta property="og:description" content="Great API design equals great user experience. Brandon details how JavaScript API builders can design great experiences by following principles found in art, architecture and industrial design."/>
+	<meta property="fb:admins" content="100002108202285"/> 
+	
+	<!-- Twitter -->
+	<meta name="twitter:card" value="summary"/>
+	<meta name="twitter:site" value="@StandardsSherpa"/>
+	<meta name="twitter:creator" value="@brandonsatrom"/>
+
+	
+
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="home" href="../../index.html"/>
+	<link rel="copyright" href="index.html#license"/>
+	<link rel="shortcut icon" type="image/png" href="../../favicon.png"/>
+	<link rel="author" type="text/plain" href="../../humans.txt.html"/>
+
+	<!--[if lte IE 8]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<!--[if (lte IE 8)&(!IEMobile)]>
+    <link rel="stylesheet" href="/c/old-ie.css" media="screen">
+	<![endif]-->
+	<!--[if gt IE 8]><!-->
+		<link rel="stylesheet" type="text/css" href="../../c/main.css" media="screen"/>
+	<!--<![endif]-->
+	<!--[if IEMobile 7]>
+		<link rel="stylesheet" href="/c/main.css" media="screen">
+		<link rel="stylesheet" href="/c/windows7-mobile.css" media="screen">
+	<![endif]-->
+	
+	<link rel="alternate" type="application/rss+xml" title="Web Standards Sherpa Reviews (Summary)" href="http://feeds.feedburner.com/Web-Standards-Sherpa-Reviews-Summary"/>
+	<link rel="alternate" type="application/rss+xml" title="Web Standards Sherpa Reviews (Full Text)" href="http://feeds.feedburner.com/Web-Standards-Sherpa-Reviews"/>
+	<link rel="alternate" type="application/rss+xml" title="Web Standards Sherpa Discussions" href="http://feeds.feedburner.com/Web-Standards-Sherpa-Discussions"/>
+
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-176472-9']);
+		_gaq.push(['_trackPageview']);
+		(function() {
+		  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+	<script type="text/javascript">
+		var WRInitTime=(new Date()).getTime();
+	</script>
+</head>
+<body id="review">
+
+
+	<header role="banner" id="page-header">
+		<h4 id="logo"><a href="../../index.html" title="Return to the homepage">Web Standards Sherpa</a></h4>
+	</header>
+
+
+		<nav id="nav-primary" role="navigation">
+		<ul><li id="nav-home"><a href="../../index.html">Home</a></li><li id="nav-reviews"><mark><a href="../index.html">Reviews</a></mark></li><li id="nav-ask-the-sherpas"><a href="../../ask-the-sherpas/index.html">Ask the Sherpas</a></li>		</ul>
+
+		
+	</nav>
+
+	
+
+	<div id="content">
+
+
+		<article class="hentry">
+			<header>
+				<h1 class="entry-title">Secrets of Awesome JavaScript <span class="caps">API</span> Design</h1>
+				<ul class="meta">
+	
+					<li class="author">by
+						<a href="../../about/authors/brandon-satrom/index.html">Brandon Satrom</a>
+					</li>
+					<li class="issue"><i>Issue </i><abbr title="Number">No.</abbr> 21</li>
+					<li class="published"><time datetime="2013-02-26T13:00:47" pubdate="pubdate">26 February 2013</time></li>
+					<li class="categories">
+						<ul>
+	
+							<li><a rel="tag" href="../by-topic/design/index.html">Design / UX</a></li>
+	
+							<li><a rel="tag" href="../by-topic/javascript/index.html">Javascript</a></li>
+	
+						</ul>
+					</li>
+				</ul>
+				
+<div id="readspeaker_button1" class="rs_skip rsbtn rs_preserve">
+    <a class="rsbtn_play" accesskey="L" title="Listen to this page using ReadSpeaker" href="http://app.na.readspeaker.com/cgi-bin/rsent?customerid=6758&amp;lang=en_us&amp;readid=content&amp;url=http%3A%2F%2Fwebstandardssherpa.com%2Freviews%2Fsecrets-of-awesome-javascript-api-design%2F">
+        <span class="rsbtn_left rsimg rspart"><span class="rsbtn_text"><span>Listen</span></span></span>
+        <span class="rsbtn_right rsimg rsplay rspart"></span>
+    </a>
+</div>
+
+			</header>
+			
+			<div class="entry-content">
+				<figure id="figure-21-1"> <img class="jail" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/r/21-1.png" /><noscript><img src="../../r/21-1.png" /></noscript> </figure>
+<p>Design is a universal concept. As the act of &ldquo;form[ing] a plan or scheme of [some thing]&hellip; for later execution,&rdquo; (<a href="http://oxforddictionaries.com/definition/american_english/design">Oxford English Dictionary</a>) design is the common thread that weaves together art, architecture, hardware and more. Software design, specifically the subcategory of <span class="caps">API</span> design, is no different. Yet <span class="caps">API</span> design is often given little attention in the world of software development, because the exercise of writing code for other developers often seems far less important than the design of application <span class="caps">UI</span> and end-user experiences.</p>
+<p>But <span class="caps">API</span> design&mdash;the public interfaces we provide in the libraries we create, with the express intent of exposing features and functionality to developers who call our code&mdash;is just as important as <span class="caps">UI</span> design. In fact, both are the primary mode of creating user experiences for a segment of an application&#8217;s audience. Where application <span class="caps">UI</span> is a large part of end-user <span class="caps">UX</span>, an application&#8217;s <span class="caps">API</span> is developer <span class="caps">UX.</span> As such, it should be designed with the same level of care and attention to detail that we provide to user interfaces. Just as we pay attention to the utility, simplicity and elegance of a <span class="caps">UI</span>, we should similarly evaluate the utility, simplicity and elegance of an <span class="caps">API.</span></p>
+<p><span class="caps">API</span> design, and in the context of this article <em>JavaScript</em> <span class="caps">API</span> design, presents a unique challenge for all developers, whether you&#8217;re building a public library or an internal one. The dynamic nature of JavaScript, the anonymity of library consumers and ambiguity in requirements presents a daunting set of challenges for the <span class="caps">API</span> designer. While there are no quick shortcuts to good <span class="caps">API</span> design, it is possible to distill a handful of design principles that hold up when applied to some of the popular JavaScript libraries of today.</p>
+<h2><span class="caps">API</span> Design: A Struggle of Good vs. Evil</h2>
+<p>Poor design in JavaScript APIs is costly, both to the developers consuming your <span class="caps">API</span> and to you. In both cases, a poor design generates waste: wasted time for developers as they struggle to make sense of an interface, and wasted time for the <span class="caps">API</span> author as she deals with the increased load of support and rework brought about by developer confusion. Considering that nearly all APIs are created with the goal of abstracting common functionality for easy consumption and thus, saving time, a poor <span class="caps">API</span> leaves both you and your users wondering if this little library of yours was such a good idea after all.</p>
+<p>Good <span class="caps">API</span> design, on the other hand, accomplishes the goal of <a href="http://en.wikipedia.org/wiki/Abstraction_(computer_science)">abstraction</a>, while being <a href="http://en.wikipedia.org/wiki/Self-documenting">self-describing</a>. When an <span class="caps">API</span> is well-designed, users can leverage your work quickly and intuitively, without the constant reference of a manual, documentation or frequent visits to support and Q&amp;A sites. You&#8217;ve also saved another developer time by packaging up some feature that would have taken much longer to create on their own. And not only does good design save developers time, it makes them look smart and responsible. Helping your users look smart and capable makes them feel awesome, which makes you look pretty awesome, too.</p>
+<h2>In JavaScript, <span class="caps">API</span> Design is Especially Important</h2>
+<p>While <span class="caps">API</span> design is important regardless of programming language or framework, the stakes of <span class="caps">API</span> design are much higher for JavaScript than for many other languages. To begin with, as a dynamic, late-bound programing language, JavaScript has no compiler to serve as a safety net or first unit test to point out mistakes in your code. <a href="http://en.wikipedia.org/wiki/Lint_%28software%29">Linting</a> or verification frameworks like <a href="http://jslint.com/">JSLint</a> and <a href="http://jshint.com/">JSHint</a> help somewhat. These utilities are useful in pointing out common mistakes in JavaScript code, but they do nothing to catch the errors a developer might make when using your <span class="caps">API.</span></p>
+<p>It&#8217;s up to you, then, to build an <span class="caps">API</span> with a design that helps users of your library fall into the proverbial &ldquo;pit of success.&rdquo; This means that your library feels comfortable and familiar to the developer, while also providing positive reinforcement and building the developer&#8217;s confidence as she interacts with your code.</p>
+<p>One of the best examples of &ldquo;falling into the pit of success&rdquo; is <a href="http://jquery.com">jQuery&#8217;s</a> use of <span class="caps">CSS</span> <a href="http://api.jquery.com/category/selectors/">selector syntax</a> for fetching <span class="caps">DOM</span> elements. For example, if I want to select all <code>article</code> elements with the class <code>blogPost</code>, I can do the following in jQuery:</p>
+<pre class="js"><code>$("article.blogPost").fadeIn();</code></pre>
+<p>It&#8217;s no coincidence that the selector <code>article.blogPost</code> uses the exact same syntax as the following:</p>
+<pre class="css"><code>article.blogPost {
+  border-radius: 10px;
+  background-color: salmon;
+  box-shadow: 0px 0px 10px 2px #ccc;
+}</code></pre>
+<p>jQuery&#8217;s selector engine was designed to enable me, the developer, to map my existing understanding of <span class="caps">CSS</span> selectors onto basic interactions with its engine. As a result, I&#8217;m instantly and measurably more productive than if jQuery required me to use a new, purpose-built syntax.</p>
+<p>It&#8217;s possible to take inspiration from libraries like jQuery and others, and to apply these our own designs. However, inspiration by itself is a degree removed from copying, and anyone who&#8217;s ever designed an <span class="caps">API</span> based solely on the inspiration of another knows that he will inherit both good and bad. Instead, if we map examples of good JavaScript <span class="caps">API</span> design to proven principles found in other fields, we can build a framework of good <span class="caps">API</span> design that can be applied in any context.</p>
+<h2>Secrets of Awesome JavaScript APIs</h2>
+<p>While it&#8217;s true that software doesn&#8217;t have the same visual qualities as a painting or a building, we tend to use the same adjectives to describe software as we do for physical media. It&#8217;s not uncommon to hear someone refer to an <span class="caps">API</span> as &ldquo;elegant&rdquo; or &ldquo;beautiful.&rdquo; If it&#8217;s valid to describe APIs in terms we use for visual media, it&#8217;s equally valid to use the principles of those media to inform our software designs.</p>
+<p>In this section, I&#8217;m going to introduce four <a href="http://en.wikipedia.org/wiki/Principles_of_art">popular design principles</a> from the art world and apply these to <span class="caps">API</span> design:</p>
+<ul>
+<li>Unity and Harmony</li>
+<li>Balance</li>
+<li>Proportionality</li>
+<li>Emphasis</li>
+</ul>
+<p>For each of these, I&#8217;ll point to one or more examples of the principle as leveraged in the <span class="caps">API</span> of a popular JavaScript library.</p>
+<h2>Principle 1: Unity <span class="amp">&amp;</span> Harmony</h2>
+<p>In art, unity is the concept behind a work, or how the composer brings everything together into a coherent whole. Harmony, on the other hand, is the placement of similar elements throughout a work, which yields an uncomplicated and simple feel when considered in its entirety.</p>
+<p>For the <span class="caps">API</span> designer, these principles can be applied through the use of similar and/or unifying elements in a library. Take, for instance, <a href="http://www.kendoui.com">Kendo <span class="caps">UI</span></a>, a JavaScript framework for building rich web applications. One of Kendo <span class="caps">UI</span>&#8217;s offerings is a set of <span class="caps">UI</span> controls and widgets, all of which can be initialized using a similar syntax. For example, if I wanted to create a <a href="http://demos.kendoui.com/web/treeview/index.html">TreeView</a> control from an unordered list, I need only call the following:</p>
+<pre class="js"><code>$("ul.tree").kendoTreeView({ /* Configuration goes here */ });</code></pre>
+<figure id="figure-21-2"> <img class="jail" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/r/21-2.png" /><noscript><img src="../../r/21-2.png" /></noscript> <figcaption>Kendo <span class="caps">UI</span> TreeView Widget</figcaption> </figure>
+<p>If, on the other hand, I wanted to create a <a href="http://demos.kendoui.com/web/panelbar/index.html">PanelBar</a> from a list, I&#8217;ll make a slightly different call.</p>
+<pre class="js"><code>$("ul.panel").kendoPanelBar({ /* Configuration goes here */ });</code></pre>
+<figure id="figure-21-3"> <img class="jail" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/r/21-3.png" /><noscript><img src="../../r/21-3.png" /></noscript> <figcaption>Kendo <span class="caps">UI</span> PanelBar</figcaption> </figure>
+<p>Kendo <span class="caps">UI</span> promotes unity and harmony by using this consistent <code>kendoX</code> syntax for all of it&#8217;s widgets. What&#8217;s more, its dependency on jQuery objects for obtaining <span class="caps">DOM</span> elements adds an additional layer of harmony that any developer already familiar with jQuery will benefit from. By using a &ldquo;local dialect&rdquo; of JavaScript that millions of developers are familiar with, Kendo <span class="caps">UI</span> promotes harmony across libraries.</p>
+<p>Another example of harmony in action is <a href="http://backbonejs.org/">Backbone&#8217;s</a> [object].extend syntax to create objects that inherit and extend the functionality of Backbone <a href="http://backbonejs.org/#Model">Models</a>, <a href="http://backbonejs.org/#View">Views</a>, <a href="http://backbonejs.org/#Collection">Collections</a> and <a href="http://backbonejs.org/#Router">Routers</a>. To create a new Backbone model, I can do something like the following, and I&#8217;ll get a model object that&#8217;s fully-supported by Backbone, while being customized to my application&#8217;s needs:</p>
+<pre class="js"><code>var Book = Backbone.Model.extend({
+  initialize: function() { ... },
+  author: function() { ... },
+  pubDate: function() { ... },
+});</code></pre>
+<p>The goals of unity and harmony are to convey familiarity and comfort to developers new to your <span class="caps">API.</span> By leveraging identical or similar idioms for related but different actions, an <span class="caps">API</span> can convey familiarity and comfort which can greatly ease a developer&#8217;s adoption of a new tool.</p>
+<h2>Principle 2: Balance</h2>
+<p>The next principle is balance, an arrangement of elements to ensure that no one part of the work overpowers other parts or causes the work to feel unstable. In art, balance is about visual weight. Even when asymmetrical, a work can feel balanced because its asymmetry follows a pattern. In the context of <span class="caps">API</span> design, I interpret balance to mean both the visual weight of the code and its predictability.</p>
+<p>A balanced <span class="caps">API</span> is one whose component parts feel as though they belong together, because they behave the same or aid the consumer in accomplishing a complementary goal. By extension, these APIs also feel balanced because they allow the consumer to extrapolate usage from a small sample. Consider <a href="http://modernizr.com/">Modernizr&#8217;s</a> <a href="http://modernizr.com/docs/#howitworks">property tests</a>. These achieve balance by a) using property names that match <span class="caps">HTML</span>5 and <span class="caps">CSS</span> concepts and APIs; and b) by consistently returning a truthy or falsy value for every single test:</p>
+<pre class="js"><code>// All of these properties will be 'true' or 'false' for a given browser
+  Modernizr.geolocation
+  Modernizr.localstorage
+  Modernizr.webworkers
+  Modernizr.canvas
+  Modernizr.borderradius
+  Modernizr.boxshadow
+  Modernizr.flexbox </code></pre>
+<figure id="figure-21-4"> <img class="jail" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/r/21-4.png" alt="Modernizr"/><noscript><img src="../../r/21-4.png" alt="Modernizr"/></noscript> </figure>
+<p>Accessing a single property tells the developer everything he or she needs to know in order to access every other property, a quality that&#8217;s powerful in its simplicity. It also ensures that the code I write to interact with Modernizr has the same visual weight each time I write or read it. How I use and access the <span class="caps">API</span> looks and feels the same, regardless of my usage. If, on the other hand, Modernizr were to add an <span class="caps">API</span> to polyfill Canvas, imbalance would take hold. Not only is the visual weight of the library affected by this new <span class="caps">API</span>, but the scope and purpose of Modernizr has grown greatly, and my ability to predict how to interact with the <span class="caps">API</span> is hampered.</p>
+<p>Another way to achieve balance through predictability is to rely on concepts already familiar to developers. A notable example is <a href="http://api.jquery.com/category/selectors/">jQuery&#8217;s selector syntax</a>, which maps <span class="caps">CSS</span>1&ndash;3 selectors into its own <span class="caps">DOM</span> selector engine:</p>
+<pre class="js"><code>$("#grid") // Selects by ID
+$("ul.nav &gt; li") // All LIs for the UL with class "nav"
+$("ul li:nth-child(2)") // Second item in each list</code></pre>
+<p>By using a familiar concept and mapping it to its own library, jQuery is able to avoid creating a new selector syntax, while also creating a mechanism that makes new users of the library instantly productive with a predictable <span class="caps">API.</span></p>
+<h2>Principle 3: Proportion</h2>
+<p>The next principle is proportion, which is a measurement of the size and quantity of elements within a work. Rather than stating that a good <span class="caps">API</span> is a small <span class="caps">API</span>, proportion is about size relative to purpose. A proportional <span class="caps">API</span> is one whose <span class="caps">API</span> surface matches its scope of capability.</p>
+<p>For instance, <a href="http://momentjs.com/">Moment.js</a>, a popular date parsing and formatting library, can be considered proportional because it&#8217;s <span class="caps">API</span> surface is compact, which matches the straightforward purpose of the library. Moment.js is for working with dates and, as such, its <span class="caps">API</span> is filled with convenience functions designed to make the JavaScript <code>Date</code> object tolerable to work with:</p>
+<pre class="js"><code>moment().format('dddd');
+moment().startOf('hour').fromNow();</code></pre>
+<figure id="figure-21-5"> <img class="jail" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/r/21-5.png" alt="Moment.js"/><noscript><img src="../../r/21-5.png" alt="Moment.js"/></noscript> </figure>
+<p>For libraries with a targeted purpose, like Moment.js, keeping the <span class="caps">API</span> focused and small is important. For larger, more expansive libraries, the size of the <span class="caps">API</span> should reflect the capabilities of the library itself.</p>
+<p>Take <a href="http://underscorejs.org/">Underscore</a>. As a general-purpose utility library, Underscore provides a large number of convenience functions designed to help developers work with JavaScript collections, arrays, functions and objects. It has a larger <span class="caps">API</span> surface than a library like Moment.js, and yet Underscore is proportional because each function aids in the purpose of the library. Consider the following examples, the first two of which illustrate using Underscore to work with Arrays, and the last of which illustrates working with strings:</p>
+<pre class="js"><code>_.each(["Todd", "Burke", "Derick"], function(name){ 
+  alert(name); 
+});</code></pre>
+<pre class="js"><code>_.map([1, 2, 3], function(num){ 
+  return num * 3; 
+});</code></pre>
+<pre class="js"><code>_.isNumber("ten"); // False</code></pre>
+<figure id="figure-21-6"> <img class="jail" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/r/21-6.png" alt="Underscore.js"/><noscript><img src="../../r/21-6.png" alt="Underscore.js"/></noscript> </figure>
+<p>As a library grows, the challenge of maintaining proportion becomes even more critical. Care must be taken to ensure that every feature and function added to a library reinforces the library&#8217;s purpose. For a large offering like Kendo <span class="caps">UI</span>, an expansive purpose doesn&#8217;t mean we need to add every feature under the sun. For a library as large as Kendo, even utility objects and features should prove their worth to be included. Take for example, <a href="http://www.kendoui.com">Kendo <span class="caps">UI</span>&#8217;s</a> JavaScript based <a href="http://docs.kendoui.com/getting-started/framework/datasource/overview">DataSource</a>, which can be used to query and work with remote data:</p>
+<pre class="js"><code>var dataSource = new kendo.data.DataSource({
+  transport: {
+    read: {
+      url: "http://search.twitter.com/search.json",
+        dataType: "jsonp",
+        data: { q: "API Design" }
+      }
+    },
+  schema: { data: "results" }
+});</code></pre>
+<p>At first glance, it might seem like a custom DataSource falls outside of the primary purpose of the library. However, many of today&#8217;s web widgets assume the existence of dynamic data, and the inclusion of a DataSource allows Kendo <span class="caps">UI</span> to use a consistent&mdash;and thus, comfortable&mdash;paradigm for working with remote data across the entire library.</p>
+<p>Allowing an <span class="caps">API</span> to turn into a veritable JavaScript junk drawer is a danger of library growth, but it is not the only danger. Of equal risk is falling in the trap <em>not</em> allowing your <span class="caps">API</span> to grow along with a library; constraining the surface area of your library for artificial reasons.</p>
+<p>A good example of how <em>not</em> to handle <span class="caps">API</span> growth, is jQuery&#8217;s <a href="http://api.jquery.com/jQuery/">jQuery or $ function</a>. As much as I and millions of others love jQuery, the library&#8217;s gateway method is a bit of a mess, providing no less than <strong>eleven</strong> separate overloads for everything from <span class="caps">DOM</span> selection to the ability to wrap <span class="caps">DOM</span> elements in a jQuery object.</p>
+<p>For the most part, these are loosely related features that have been stuffed into one <span class="caps">API.</span> Taken on the whole, jQuery is a large library and can be considered reasonably proportional. The jQuery method, on the other hand, represents what can happen when we attempt to force functionality into a single interface, without care for proportion.</p>
+<p>If you find yourself stuffing tangential features into existing methods, or rationalizing the addition of function overloads that don&#8217;t feel natural to the <span class="caps">API</span>, chances are you need to loosen the belt and let that library breathe. Your users will have an easier time adapting to a new function with a self-describing name than they will yet another overload on an existing method.</p>
+<h2>Principle 4: Emphasis</h2>
+<p>In art, emphasis is the use of contrast to cause an aspect of the work to stand out and serve as a focal point. In many APIs, the focal point might be a gateway or main method that anchors the library. Another example of emphasis could be a &ldquo;chained&rdquo; or <a href="http://en.wikipedia.org/wiki/Fluent_interface">fluent <span class="caps">API</span></a>, which adds emphasis to a central object used by the library. jQuery&#8217;s tendency to return a <code>jQuery</code> object from many of it&#8217;s functions demonstrates this type of emphasis:</p>
+<pre class="js"><code>$('ul.first').find('.overdue')
+  .css('background-color','red')
+  .end()
+  .find('.due-soon')
+  .css('background-color', 'yellow');</code></pre>
+<p>For many modern libraries, another excellent example of emphasis is extensibility: that part of the library where the creators embrace what&#8217;s missing from the library by giving you a vehicle to add functionality yourself.</p>
+<p>A classic example is <a href="http://docs.jquery.com/Plugins/Authoring">jQuery&#8217;s <code>fn</code> (pronounced &ldquo;effin&rdquo;) namespace</a>, the general extensibility point from which countless plugins and complementary libraries have been launched:</p>
+<pre class="js"><code>(function($) {
+  $.fn.kittehfy = function() {
+    return this.each(function(idx, el) {        
+      var width = el.width,
+        height = el.height;
+      var src= "http://placekitten.com/";
+      el.src= src + width + "/" + height;
+    });
+  };
+})(jQuery);</code></pre>
+<p>Another example of extensibility is Backbone&#8217;s &ldquo;extend&rdquo; function, which we&#8217;ve looked at already in this article:</p>
+<pre class="js"><code>var DocumentRow = Backbone.View.extend({
+  tagName: "li",
+  className: "row",
+  events: {
+    "click .icon": "open",
+    "click .button.edit": "openEditDialog"
+  },
+  render: function() { ... }
+});</code></pre>
+<figure id="figure-21-7"> <img class="jail" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/r/21-7.png" alt="Backbone.js"/><noscript><img src="../../r/21-7.png" alt="Backbone.js"/></noscript> </figure>
+<p>Adding extensibility exhibits emphasis because it calls attention to the fact that a given library wasn&#8217;t meant to be the end&ndash;all&ndash;be&ndash;all, while at the same time encouraging you to add to the capabilities of the library as you see fit. When libraries encourage extensibility, they unlock not only new specialized uses, but additional general uses that might benefit countless other developers. One great example is the <a href="http://marionettejs.com/">Backbone.Marionette</a> framework, a extension library for Backbone that aims to &ldquo;&hellip;simplify the construction of large scale JavaScript applications.&rdquo; Were it not for the extensibility of a library like Backbone, libraries like Marionette would be much more difficult, if not impossible, to deliver.</p>
+<h2><span class="caps">API</span> Design: Not Just For Library Authors</h2>
+<p>If you&#8217;re not a JavaScript library author, but consider yourself a JavaScript app developer and library implementer, you might be tempted to think that the principles in this article don&#8217;t apply to you. After all, most of us often think of third-party libraries, like those I&#8217;ve used for the samples in this article, when we hear the term &ldquo;<span class="caps">API.</span><span class="final quote">&rdquo;</span></p>
+<p>The truth is that an <span class="caps">API</span>, by definition, is nothing more than a segregated piece of functionality that provides an interface for others to leverage. I&#8217;m using general terms here to underscore an important point: modular JavaScript code is written to be consumed; the number of consumers is irrelevant.</p>
+<p>Your own JavaScript code exposes interfaces for others, just as the libraries referenced in this article do. Even if the consumers of your code are a small, internal team&mdash;or even if you&#8217;re building a library for private use&mdash;you don&#8217;t have to be a public library author to think about <span class="caps">API</span> design and apply the principles covered in this article. The benefits of leveraging intentional <span class="caps">API</span> design pay off for an audience of one, just as they do for an audience of one million.</p>
+<p>Because <span class="caps">API</span> design represents <span class="caps">UX</span> for developers, it is just as important as <span class="caps">UI</span> design for end-users. Just as we can learn to develop a sense for <span class="caps">UI</span> design by studying principles and examples of good and bad interfaces, we can learn much about good <span class="caps">API</span> design by doing the same. Applying the four principles from this article, as well as others you discover on your own, can result in awesome APIs that delight your users and help them build amazing experiences for others.</p>
+				
+			
+				<section id="extra-mile">
+					<h1>Going the <span>Extra Mile</span></h1>
+				
+					
+						<p>The principles in this list are meant to be a jumping off point for your own study into <span class="caps">API</span> design. There are many other principles and practices in the world of physical media that can inform the <span class="caps">API</span> designs we create, and I encourage you to study these principles and look for examples on display in popular JavaScript libraries, like those mentioned in this&nbsp;article.</p>
+				</section>
+			
+				<section id="takeaways">
+				<section id="pitfalls" class="takeaway">
+
+					<h1>Pitfalls to Avoid</h1>
+
+					<ul>
+<li>Don’t make the mistake of designing your <span class="caps">API</span> with only your needs in mind. The best way to design for other developers is to design <em>with</em> those developers. Get your work out in the open early and iterate often based on feedback from&nbsp;others.</li>
+<li>When considering new interfaces for your library, be on the lookout for interfaces that create imbalance because their behavior is inconsistent with other interfaces, or because the goal of that interface extends beyond the purpose of the&nbsp;library.</li>
+<li>Interfaces with too many overloads are the quickest way to introduce disproportion. Be on the lookout for gateway methods or other interfaces that hide functionality behind method&nbsp;overloads.</li>
+</ul>
+				</section>
+				<section id="todos" class="takeaway">
+
+					<h1>Things to Do</h1>
+
+					<ul>
+<li>To foster unity and harmony and provide familiarity and comfort for your users, consider placing similar and/or unifying elements throughout your <span class="caps">API.</span></li>
+<li>To maintain balance, ensure that each interface of your library exhibits consistent behavior, or aids in meeting a complimentary&nbsp;goal.</li>
+<li>Keep an eye of the proportion of your <span class="caps">API</span> by ensuring that every interface of the library matches its intended purpose, and that no extraneous elements&nbsp;exist.</li>
+<li>Consider using (properly-scoped) gateway methods, chained or fluent APIs and extensibility hooks to create a focal point of emphasis in your&nbsp;library.</li>
+</ul>
+				</section>
+				</section>
+			
+
+
+				<section id="further-reading">
+					<h1>Further Reading</h1>
+					<ul>
+	
+		
+						<li class="book"><cite><a href="http://my.safaribooksonline.com/book/software-engineering-and-development/9780321702081">The Design of Design: Essays from a Computer Scientist</a></cite>, Addison-Wesley Professional, 2010</li>
+	
+		
+						<li class="book"><cite><a href="http://stuffcreators.com/upod/">Universal Principles of Design</a></cite>, Rockport Publishers, 2009</li>
+	
+		
+						<li class="article">&#8220;<a href="http://eliperelman.com/blog/2011/12/12/javascript-api-design/">JavaScript API Design</a>&#8221;, <cite>Eli Perelman</cite>, 11 December 2011</li>
+	
+					</ul>
+				</section>
+			</div>
+			
+		</article>
+									<section id="comments" style="display: none">
+					<header>
+						<h1 class="question">What are some other examples of good (or bad) <span class="caps">API</span> designs that you&rsquo;ve&nbsp;seen?</h1>
+					</header>
+					<a id="comment-loader" data-include-on-tap data-replace="/comments/secrets-of-awesome-javascript-api-design/" data-include-size="5" href="comments/index.html#comments">View comments on this entry and add your own</a>
+				</section>
+								
+
+		
+		
+		
+	   <ul id="pagination">
+	     <li class="prev"><a href="../dissecting-gmails-email-attachments/index.html"><em>Previous Entry: </em>Dissecting Gmail&#8217;s Email&nbsp;Attachments</a></li>
+	     <li class="next"><a href="../leaning-into-longform/index.html"><em>Next Entry: </em>Leaning Into&nbsp;Longform</a></li>
+	   </ul>
+
+		
+		<footer class="sidebar" role="complementary">
+		
+				
+		<section id="author" class="sidebar-item vcard byline">
+			<h1>Your Sherpa</h1>
+	
+	
+		
+		<h2><a class="fn url" href="../../about/authors/brandon-satrom/index.html">
+			<img class="photo" src="../../i/a/uploads/avatar_2125.jpg" alt=""/>Brandon Satrom</a></h2>
+		<p>Brandon Satrom lives in Austin, <span class="caps">TX</span> with his family and works on the web as Program Manager for <a href="http://www.kendoui.com">Kendo <span class="caps">UI</span></a>.</p>
+		<p class="more"><a href="../../about/authors/brandon-satrom/index.html">More about Brandon</a></p>
+	
+</section>
+
+			
+			
+		
+			
+				
+
+			<section id="share" class="sidebar-item entry-unrelated">
+
+				<h1>Share</h1>
+
+				<p id="twitter"><a href="https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fwebstandardssherpa.com%2Freviews%2Fsecrets-of-awesome-javascript-api-design%2F&amp;source=tweetbutton&amp;text=Secrets+of+Awesome+JavaScript+API+Design+by+@brandonsatrom&amp;url=http%3A%2F%2Fwebstandardssherpa.com%2Freviews%2Fsecrets-of-awesome-javascript-api-design%2F&amp;via=StandardsSherpa%20%23wssherpa%20%23sherpa21&amp;related=WaSP:Web%20Standards" title="Tweet"><img src="http://cdn.webstandardssherpa.com/i/button-twitter.png" alt=""/></a> <b class="hashtag"><em>Hashtag:</em> #sherpa21</b></p>
+                <p id="facebook"><a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fwebstandardssherpa.com%2Freviews%2Fsecrets-of-awesome-javascript-api-design%2F" title="Share on Facebook"><img src="http://cdn.webstandardssherpa.com/i/button-facebook.png" alt=""/></a></p>
+				<p id="linkedin"><a href="https://www.linkedin.com/cws/share?url=http%3A%2F%2Fwebstandardssherpa.com%2Freviews%2Fsecrets-of-awesome-javascript-api-design%2F&amp;original_referer=http%3A%2F%2Fwebstandardssherpa.com%2Freviews%2Fsecrets-of-awesome-javascript-api-design%2F" title="Share on LinkedIn"><img src="http://cdn.webstandardssherpa.com/i/button-linkedin.png" alt=""/></a></p>
+				<p id="google_plus"><a href="https://plus.google.com/share?url=http%3A%2F%2Fwebstandardssherpa.com%2Freviews%2Fsecrets-of-awesome-javascript-api-design%2F" title="Share on Google Plus"><img src="http://cdn.webstandardssherpa.com/i/button-googleplus.png" alt=""/></a></p>
+			</section>
+			
+			
+						<section id="standards-fact" class="sidebar-item entry-unrelated">
+
+				<h1>Standards Fact</h1>
+
+
+				<p>As of September 2006, all websites built for the Dutch government must follow web standards and meet a strict set of accessibility&nbsp;requirements.</p>
+
+			</section>
+
+			
+	<section id="submit-a-site" class="sidebar-item entry-unrelated">
+		<p><a href="../../submit-a-site/index.html"><img src="../../i/feed-shirley-222x99.png" alt="Submit a site for Review" /></a></p>
+	</section>
+
+
+
+		</footer>
+	
+	  </div>
+  		<form style="display: none" id="search-form" method="post" action="../../index.html"  >
+<div class='hiddenFields'>
+<input type="hidden" name="ACT" value="6" />
+<input type="hidden" name="XID" value="1f7ca4cd67615a3e3c20df3f5930873453c8c66a" />
+<input type="hidden" name="RES" value="10" />
+<input type="hidden" name="meta" value="vJed+IEhaFn3W7jNVVY8C6VK4KKB0doGerxtt+3TXJkJkrK5M3OFhLNfv7UrH+uJhVYy/SM2Y8CEBzxS9ZAY+5Ry234MoWdF0KwpptDKKX/rJJg1NP4Y7SntDPwMKWd0mrV/+nbWgdpLXyGAXHtWDd/W8QMHWePL8qfhqCpJzaK4pU2LxFEhOj26ZDN4P+8d8hXffYqEVMiMRDrkUYAlZAa+r08a/igafmWKpfXqcmFAHWq/qsh+zoaTz9V6wiUJl2MMAdfHTEZ76nZbWvE5NUZpcvtxRexke8gSzhsFUK46dJJ8pJfmOvPccKB8bfwmBU4cgAZ668OleVhPUZRHiYhGfX21C2DodUFydLdhuEPR2Upj1jdw5RfdVF8nWXwA5G5T4DRd4xKMtKvVvr1BpJKZ37Gid+DBZjiqIcAhYCY=" />
+<input type="hidden" name="site_id" value="1" />
+</div>
+
+
+		<p role="search">
+			<label for="query">Looking for something?</label>
+			<input type="search" name="keywords" id="query" value=""/>
+			<button type="submit">Search</button>
+		</p>
+	</form>
+
+    	<nav id="nav-account" style="display: none" role="navigation">
+		<ul class="buttons">
+	
+			<li><a href="../../sign-up/index.html" style="display: none">Sign up</a></li>
+	
+	
+			<li><a href="../../log-in/index.html" style="display: none">Log in</a></li>
+	
+		</ul>
+	</nav>
+  <footer role="contentinfo" id="page-footer">
+	<div id="site-info">
+			<div id="elevator-pitch" class="footer-item">
+
+		<p>Web Standards Sherpa&rsquo;s experts provide helpful, pragmatic and up-to-date advice on best practices for web professionals everywhere.</p>
+<ul class="more">
+<li><a href="../../about/index.html">More about us</a></li>
+<li><a href="../../contact/index.html" style="display: none">Contact us</a></li>
+</ul>
+
+	</div>
+			<nav id="nav-complete" role="navigation">
+		<section class="participate" style="display: none">
+			<h1>Participate</h1>
+			<ul>
+				<li><a href="../../submit-a-site/index.html">Submit a site</a></li>
+				<li><a href="../../submit-a-question/index.html">Submit a question</a></li>
+				<li><a href="../../sign-up/index.html" style="display: none">Sign up</a><a href="../../log-in/index.html" style="display: none">Log in</a></li>
+				
+			</ul>
+		</section>
+		<section class="learn">
+			<h1>Learn</h1>
+			<ul>
+				<li><mark><a href="../index.html">Reviews</a></mark></li>
+				<li><a href="../../ask-the-sherpas/index.html">Ask Sherpas</a></li>
+				<li><a href="../../about/authors/index.html">Authors</a></li>
+				<li><a href="../../glossary/index.html">Glossary</a></li>
+				
+			</ul>
+		</section>
+	</nav>
+
+			<section id="sponsors" class="footer-item">
+
+		<h1>We thank our sponsors</h1>
+
+				<ol class="partners">					<li>
+											<a href="http://www.microsoft.com"><img src="../../i/p/microsoft-mono.png" alt="Microsoft"/></a>
+										</li>
+				
+									<li>
+											<a href="http://mailchimp.com"><img src="../../i/p/mc-mono.png" alt="MailChimp"/></a>
+										</li>
+				
+									<li>
+											<a href="http://developer.mozilla.org"><img src="../../i/p/mozilla-mono.png" alt="Mozilla"/></a>
+										</li>
+				
+									<li>
+											<a href="http://mediatemple.net"><img src="../../i/p/mt-mono.png" alt="Media Temple"/></a>
+										</li>
+				</ol>
+
+	</section>
+	</div>
+	<div id="terms" class="source-org vcard">
+		<p id="ownership"><a xmlns:dct="http://purl.org/dc/terms/" href="../../index.html" property="dct:title" rel="cc:attributionURL">Web Standards Sherpa</a> is an outreach effort by the <a class="org fn url" xmlns:cc="http://creativecommons.org/ns#" href="http://webstandards.org" property="cc:attributionName">Web Standards Project (WaSP)<img src="../../i/WaSP-logo-mono.png" alt="" /></a>.</p>
+<!--		<p id="network">This site is a proud member of the <a rel="license" href="http://network.smashingmagazine.com/">Smashing Network<img src="/i/p/smashing-mono.png" alt="" /></a>.</p> -->
+		<p id="license">The content of this site is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons<img src="../../i/license.png" alt="" /></a>.</p>
+	</div>
+	
+  </footer>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+	<script>window.jQuery || document.write("<script src='../../j/jquery.js'>\x3C/script>")</script>
+	<script src="../../j/main.js"></script>
+	
+					<script>(function(e,t){var n=t(jQuery),r=typeof define=="function"&&define.amd;r?define(e,["jquery"],n):(this.jQuery||this.$||this)[e]=n})("jail",function(e){function s(e,n){var r=!1;!n||(r=n.data("triggerElem")),!!r&&typeof r.on=="function"&&(r.on(e.event+"."+e.id,{options:e,images:n},u),t.on("resize."+e.id,{options:e,images:n},u))}function o(e){var t=0;if(e.length===0)return;for(;;){if(t===e.length)break;e[t].getAttribute("data-src")?t++:e.splice(t,1)}}function u(n){var i=n.data.images,u=n.data.options;i.data("poller",setTimeout(function(){r=e.extend({},i),o(r),e(r).each(function(){if(this===window)return;f(u,this,r)});if(a(r)){e(n.currentTarget).unbind(n.type+"."+u.id);return}if(u.event!=="scroll"){var l=/scroll/i.test(u.event)?i.data("triggerElem"):t;u.event="scroll",i.data("triggerElem",l),s(u,e(r))}},u.timeout))}function a(t){var n=!0;return e(t).each(function(){!e(this).attr("data-src")||(n=!1)}),n}function f(n,r,i){var s=e(r),o=/scroll/i.test(n.event)?i.data("triggerElem"):t,u=!0;n.loadHiddenImages||(u=h(s,o,n)&&s.is(":visible")),u&&l(o,s,n.offset)&&c(n,s)}function l(e,t,n){var r=e[0]===window,i=r?{top:0,left:0}:e.offset(),s=i.top+(r?e.scrollTop():0),o=i.left+(r?e.scrollLeft():0),u=o+e.width(),a=s+e.height(),f=t.offset(),l=t.width(),c=t.height();return s-n<=f.top+c&&a+n>=f.top&&o-n<=f.left+l&&u+n>=f.left}function c(t,n){var s=new Image;s.onload=function(){n.hide().attr("src",s.src),n.removeAttr("data-src"),t.effect?(t.speed?n[t.effect](t.speed):n[t.effect](),n.css("opacity",1),n.show()):n.show(),o(r),!t.callbackAfterEachImage||t.callbackAfterEachImage.call(this,n,t),a(r)&&!!t.callback&&!i&&(t.callback.call(e.jail,t),i=!0)},s.src=n.attr("data-src")}function h(n,i,o){var u=n.parent(),a=!0;while(u.length&&u.get(0).nodeName.toUpperCase()!=="BODY"){if(u.css("overflow")==="hidden"){if(!l(u,n,o.offset)){a=!1;break}}else if(u.css("overflow")==="scroll"&&!l(u,n,o.offset)){a=!1,e(r).data("triggerElem",u),o.event="scroll",s(o,e(r));break}if(u.css("visibility")==="hidden"||n.css("visibility")==="hidden"){a=!1;break}if(i!==t&&u===i)break;u=u.parent()}return a}var t=e(window),n={id:"jail",timeout:1,effect:!1,speed:400,triggerElement:null,offset:0,event:"load",callback:null,callbackAfterEachImage:null,placeholder:!1,loadHiddenImages:!1},r=[],i=!1;return e.jail=function(t,r){var i=t||{},s=e.extend({},n,r);e.jail.prototype.init(i,s),/^(load|scroll)/.test(s.event)?e.jail.prototype.later.call(i,s):e.jail.prototype.onEvent.call(i,s)},e.jail.prototype.init=function(n,r){n.data("triggerElem",r.triggerElement?e(r.triggerElement):t),!r.placeholder||n.each(function(){e(this).attr("src",r.placeholder)})},e.jail.prototype.onEvent=function(t){var n=this;t.triggerElement?s(t,n):n.on(t.event+"."+t.id,{options:t,images:n},function(t){var n=e(this),i=t.data.options,s=t.data.images;r=e.extend({},s),c(i,n),e(t.currentTarget).unbind(t.type+"."+i.id)})},e.jail.prototype.later=function(t){var n=this;setTimeout(function(){r=e.extend({},n),n.each(function(){f(t,this,n)}),t.event="scroll",s(t,n)},t.timeout)},e.fn.jail=function(t){return new e.jail(this,t),r=[],this},e.jail});
+
+(function($){$("img.jail").jail({offset:100});}(jQuery));</script>
+				
+			<script src="../../j/live-comment-preview.js" type="text/javascript"></script>
+		
+	
+
+	<!-- Just to see if this works -->
+	<!--[if lte IE 6]><script src="/j/ie6.js"></script><![endif]-->
+
+
+			<script type="text/javascript">
+			  var rpxJsHost = (("https:" == document.location.protocol) ? "https://" : "http://static.");
+			  document.write(unescape("%3Cscript src='" + rpxJsHost + "rpxnow.com/js/lib/rpx.js' type='text/javascript'%3E%3C/script%3E"));
+			</script>
+
+			<script type="text/javascript">
+				RPXNOW.overlay = true;
+		  		RPXNOW.language_preference = "en";
+			  	RPXNOW.init({appId: 'cdnifhbomckchfhfgbpl', xdReceiver: '/rpx_xdcomm.html'});
+			</script>
+
+	<div id="ClickTaleDiv" style="display: none;"></div>
+	<script type="text/javascript">
+		if ( document.location.protocol!='https:' )
+		{
+			$.getScript('http://s.clicktale.net/WRb6.js',function(){
+				if ( typeof ClickTale=='function' )
+				{ClickTale(16473,0.1,"www02");}
+			});
+		}
+	</script>
+</body>
+</html>
+

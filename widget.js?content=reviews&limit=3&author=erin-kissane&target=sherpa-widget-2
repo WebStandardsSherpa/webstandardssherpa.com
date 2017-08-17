@@ -1,0 +1,40 @@
+
+(function(){
+
+	var 
+	target = 'sherpa-widget-2',
+	css, html;
+	
+	
+	/* Create HTML element and assiging attributes to append to the head of the document */
+	css = document.createElement('link');
+	css.setAttribute('rel', 'stylesheet');
+	css.setAttribute('href', 'http://webstandardssherpa.com/w/widget.css');
+	document.head.appendChild(css);
+	
+	html = 	'<div class="sherpa-widget-content">' +
+			'<ul>' +
+						'<li>' +
+			'<em class="issue"><i>Issue </i>No. 11</em>' +
+			'<h2 class="title"><a href="http://webstandardssherpa.com/reviews/welcome-to-the-jungle-shaping-user-generated-content">Welcome to the Jungle: Shaping User-Generated Content</a></h2>' +
+			'<p class="author"><strong>by </strong>Erin Kissane</p>' +
+			'</li>' +
+						'<li>' +
+			'<em class="issue"><i>Issue </i>No. 7</em>' +
+			'<h2 class="title"><a href="http://webstandardssherpa.com/reviews/dissecting-a-chattarati-sidebar">Dissecting a Chattarati Sidebar</a></h2>' +
+			'<p class="author"><strong>by </strong>Erin Kissane</p>' +
+			'</li>' +
+						'<li>' +
+			'<em class="issue"><i>Issue </i>No. 1</em>' +
+			'<h2 class="title"><a href="http://webstandardssherpa.com/reviews/webstandards_org-context-and-audience-on-the-homepage">Webstandards.org: Context &amp;amp; Audience on the Homepage</a></h2>' +
+			'<p class="author"><strong>by </strong>Erin Kissane</p>' +
+			'</li>' +
+						'</ul>' +
+			'</div>' +
+			'<footer>' +
+			'<a href="http://webstandardssherpa.com">Webstandardssherpa.com</a>' +
+			'</footer>';
+	
+	document.getElementById(target).innerHTML = html;
+	
+}());

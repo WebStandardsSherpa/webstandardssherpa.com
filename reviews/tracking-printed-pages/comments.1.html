@@ -1,0 +1,553 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" id="webstandardssherpa_com">
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Language" content="en"/>
+	
+
+	<title>Tracking Printed Pages (or How to Validate Assumptions) - Web Standards Sherpa</title>
+	<meta name="robots" content="index,follow,archive" />
+	 <link rel="canonical_url" href="index.html" /> 
+	<meta name='description' content='What guides your project decisions? Data or assumptions? Adrian discusses the importance of tracking site features, like print styles, to inform how and where you invest effort.' />
+	<meta name='DC.description' content='What guides your project decisions? Data or assumptions? Adrian discusses the importance of tracking site features, like print styles, to inform how and where you invest effort.' />
+	<meta name='keywords' content='Design / UX,Performance,Usability' />
+	<meta name='DC.subject' content='Design / UX,Performance,Usability' />
+
+	<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
+	<link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
+	<meta name="DC.title" content="Tracking Printed Pages (or How to Validate Assumptions) - Web Standards Sherpa" />
+	<meta name="DC.creator" content="Adrian Roselli" />
+	<meta name="DC.publisher" content="The Web Standards Project" />
+	<meta name="DC.date.created" scheme="DCTERMS.W3CDTF" content="2015-12-07T14:48:40-05:00" />
+	<meta name="DC.date.modified" scheme="DCTERMS.W3CDTF" content="1453-05-16T15:00:00-05:00" />
+	<meta name="DC.date.valid" scheme="DCTERMS.W3CDTF" content="2015-12-13T16:48:40-05:00" />
+	<meta name="DC.type" scheme="DCTERMS.DCMIType" content="Text" />
+	<meta name="DC.rights" scheme="DCTERMS.URI" content="(cc) Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License">
+	<meta name="Copyright" content="(cc) Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License"/>
+	<meta name="DC.format" content="text/html" />
+	<meta name="DC.identifier" scheme="DCTERMS.URI" content="http://webstandardssherpa.com/reviews/tracking-printed-pages/" />
+	<meta name="MSSmartTagsPreventParsing" content="true"/>
+	<meta name="Rating" content="General"/>
+
+	<meta property="og:title" content="Tracking Printed Pages (or How to Validate Assumptions)"/> 
+	<meta property="og:type" content="article"/> 
+	<meta property="og:url" content="http://webstandardssherpa.com/reviews/tracking-printed-pages/"/> 
+	<meta property="og:image" content="http://webstandardssherpa.com/i/fb-backpack.png"/> 
+	<meta property="og:site_name" content="Web Standards Sherpa"/> 
+	<meta property="og:description" content="What guides your project decisions? Data or assumptions? Adrian discusses the importance of tracking site features, like print styles, to inform how and where you invest effort."/>
+	<meta property="fb:admins" content="100002108202285"/> 
+	
+	<!-- Twitter -->
+	<meta name="twitter:card" value="summary"/>
+	<meta name="twitter:site" value="@StandardsSherpa"/>
+	<meta name="twitter:creator" value="@aardrian"/>
+
+	
+
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="home" href="../../index.html"/>
+	<link rel="copyright" href="comments.1.html#license"/>
+	<link rel="shortcut icon" type="image/png" href="../../favicon.png"/>
+	<link rel="author" type="text/plain" href="../../humans.txt.html"/>
+
+	<!--[if lte IE 8]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<!--[if (lte IE 8)&(!IEMobile)]>
+    <link rel="stylesheet" href="/c/old-ie.css" media="screen">
+	<![endif]-->
+	<!--[if gt IE 8]><!-->
+		<link rel="stylesheet" type="text/css" href="../../c/main.css" media="screen"/>
+	<!--<![endif]-->
+	<!--[if IEMobile 7]>
+		<link rel="stylesheet" href="/c/main.css" media="screen">
+		<link rel="stylesheet" href="/c/windows7-mobile.css" media="screen">
+	<![endif]-->
+	
+	<link rel="alternate" type="application/rss+xml" title="Web Standards Sherpa Reviews (Summary)" href="http://feeds.feedburner.com/Web-Standards-Sherpa-Reviews-Summary"/>
+	<link rel="alternate" type="application/rss+xml" title="Web Standards Sherpa Reviews (Full Text)" href="http://feeds.feedburner.com/Web-Standards-Sherpa-Reviews"/>
+	<link rel="alternate" type="application/rss+xml" title="Web Standards Sherpa Discussions" href="http://feeds.feedburner.com/Web-Standards-Sherpa-Discussions"/>
+
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-176472-9']);
+		_gaq.push(['_trackPageview']);
+		(function() {
+		  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+	<script type="text/javascript">
+		var WRInitTime=(new Date()).getTime();
+	</script>
+</head>
+<body id="review">
+
+
+	<header role="banner" id="page-header">
+		<h4 id="logo"><a href="../../index.html" title="Return to the homepage">Web Standards Sherpa</a></h4>
+	</header>
+
+
+		<nav id="nav-primary" role="navigation">
+		<ul><li id="nav-home"><a href="../../index.html">Home</a></li><li id="nav-reviews"><mark><a href="../index.html">Reviews</a></mark></li><li id="nav-ask-the-sherpas"><a href="../../ask-the-sherpas/index.html">Ask the Sherpas</a></li>		</ul>
+
+		
+	</nav>
+
+	
+
+	<div id="content">
+
+
+		<article class="hentry">
+			<header>
+				<h1 class="entry-title">Tracking Printed Pages (or How to Validate Assumptions)</h1>
+				<ul class="meta">
+	
+					<li class="author">by
+						<a href="../../about/authors/adrian-roselli/index.html">Adrian Roselli</a>
+					</li>
+					<li class="issue"><i>Issue </i><abbr title="Number">No.</abbr> 28</li>
+					<li class="published"><time datetime="2013-12-11T06:00:00" pubdate="pubdate">11 December 2013</time></li>
+					<li class="categories">
+						<ul>
+	
+							<li><a rel="tag" href="../by-topic/design/index.html">Design / UX</a></li>
+	
+							<li><a rel="tag" href="../by-topic/performance/index.html">Performance</a></li>
+	
+							<li><a rel="tag" href="../by-topic/usability/index.html">Usability</a></li>
+	
+						</ul>
+					</li>
+				</ul>
+				
+<div id="readspeaker_button1" class="rs_skip rsbtn rs_preserve">
+    <a class="rsbtn_play" accesskey="L" title="Listen to this page using ReadSpeaker" href="http://app.na.readspeaker.com/cgi-bin/rsent?customerid=6758&amp;lang=en_us&amp;readid=content&amp;url=http%3A%2F%2Fwebstandardssherpa.com%2Freviews%2Ftracking-printed-pages%2Fcomments">
+        <span class="rsbtn_left rsimg rspart"><span class="rsbtn_text"><span>Listen</span></span></span>
+        <span class="rsbtn_right rsimg rsplay rspart"></span>
+    </a>
+</div>
+
+			</header>
+			
+			<div class="entry-content">
+				<figure id="figure-28-1"><img class="jail" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/r/28-1.jpg" /><noscript><img src="../../r/28-1.jpg" /></noscript></figure>
+<p>Every project comes with a built-in set of boundaries. Sometimes it&#8217;s budget, other times it&#8217;s the timeline, occasionally it&#8217;s the client, and the list goes on. Experience suggests that it&#8217;s almost always all of these.</p>
+<p>In my <a href="../balancing-act-features-budgets-timelines/index.html" title="Balancing Act: Features, Budgets &amp; Timelines">last article</a>, I discussed some of the technical and practical decisions that go into balancing features, budgets and timelines. For <em>this</em> article, I&#8217;m diving a little deeper into the decision-making process and how we should test our decisions to help our projects and clients stay on course.</p>
+<p>Consider the case for creating print styles (if pint style are new to you, get up to speed with <a href="http://www.creativebloq.com/responsive-web-design/make-your-website-printable-css-3132929" title="Make your website printable with CSS">this article</a>, <a href="http://coding.smashingmagazine.com/2013/03/08/tips-tricks-print-style-sheets/" title="Tips And Tricks For Print Style Sheets">this one</a> or <a href="http://stephaniehobson.ca/2012/03/14/print-styles-responsive-design/" title="Print Styles Are Responsive Design">this one</a>.). They are often overlooked, because native print features are also overlooked. By comparison, carousels (otherwise known as &ldquo;sliders&rdquo; or &ldquo;stuff-everything-possible-on-the-home-page&rdquo; boxes) typically get a great deal of attention from stakeholders, designers and developers. But just because our internal focus is different for these features, doesn&#8217;t mean one is more important or more effective in achieving a site&#8217;s goals. This is why it&#8217;s essential to track the right features and measure results. With data, rather than assumptions, we can invest our time in the features most important for a site and users.</p>
+<h2>Assumptions about &ldquo;Interaction<span class="final quote">&rdquo;</span></h2>
+<p>Often when planning a site and identifying features, decision makers have to weigh a combination of internal requests and their own preferences. There is a perception sometimes that making a page more &ldquo;interactive&rdquo; will make it more engaging and drive traffic.</p>
+<p>The catch is that far too often, &ldquo;interactive&rdquo; is a request for more movement, piles of additional content or both. As a result, the site designer and builder have to invest time to not only get the extra information in front of users, but have it make sense and be functional.</p>
+<p>What adds to the challenge is that during the effort to be more &ldquo;interactive,&rdquo; other valuable but comparatively simple features can get lost in the mix. Elements that <em>users</em> truly find valuable, even on a small scale, can be missed entirely. In short, the people paying for the site, designing the site, building the site, writing content for the site and marketing the site don&#8217;t always understand each others&#8217; goals. And they may not understand the users&#8217; goals either.</p>
+<figure id="figure-28-2"><img class="jail" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/r/28-2.jpg" /><noscript><img src="../../r/28-2.jpg" /></noscript><figcaption>All the events being tracked for my site in Google Analytics</figcaption></figure>
+<p>Thankfully we have <a href="http://www.kaushik.net/avinash/web-analytics-demystified/" title="Web Analytics Demystified">web analytics</a>. Whether you use <a href="http://blog.kissmetrics.com/50-resources-for-getting-the-most-out-of-google-analytics/" title="50 Resources for Getting the Most Out of Google Analytics">Google Analytics</a> or another tool, it&#8217;s pretty easy to see what pages are getting traffic, what links are being followed and, in general, what people are doing on your site. Armed with this information, you can make intelligent decisions about what works, what doesn&#8217;t, where to expend effort and where to reel it in.</p>
+<p>The problem is that we aren&#8217;t always tracking the right things.</p>
+<h2>Print Styles</h2>
+<p>Print styles are, or at least should be, a fundamental part of responsive design. Just as we use media queries to target differently-sized (or oriented) displays and alternate devices, targeting the printed page is a natural part of this. Print has been supported as a media type since well before responsive design, and users still print pages for everything from real-world document sharing to conference schedules when internet access is overloaded and spotty.</p>
+<p>Despite the <em>user value</em> that print styles can bring to a site, decision makers often assume they aren&#8217;t a priority or even necessary. In fact, in all the time I have <a href="http://blog.adrianroselli.com/2012/04/more-evidence-of-need-for-print-styles.html" title="More Evidence of the Need for Print Styles">evangelized</a> <a href="http://blog.adrianroselli.com/2011/12/test-in-lynx-and-print-its-your-job.html" title="Test in Lynx and Print, It's Your Job">print</a> <a href="http://adrianroselli.com/Articles/ResponsiveWebAndPrint" title="Print Styles Forgotten by Responsive Web Developers">styles</a>, my arguments are often countered by people who claim that nobody prints web pages. This assumption is likely due to the fact that, on the whole, we don&#8217;t know when users actually print a page. We don&#8217;t measure it, we don&#8217;t see its use and, by extension, we assume it has no value.</p>
+<p>And, despite all my observations to the contrary, anecdotal evidence isn&#8217;t good data. Without good data, how can I know if even my minimal amount of time developing print styles is worth the effort? How can I justify the effort against a tight budget or a tight timeline? How can I make a case for it when the other decision makers don&#8217;t even have it on their radar?</p>
+<h2>Tracking Print Pages</h2>
+<p>So I set about creating a dead-simple technique to <a href="http://blog.adrianroselli.com/2013/03/tracking-when-users-print-pages.html">track when print styles are called</a> using Google Analytics. I already used Google Analytics&#8217; event tracking feature to track what links on my home page are clicked, whether in my footer, in different content areas or in the carousel that graces the bulk of the home page. All I needed was to extend this same process to track print styles.</p>
+<p>The solution was to record this request in Google Analytics via use of a page specific tracking <span class="caps">GIF</span> to be loaded loaded only when print styles are applied to the page (note the fake query string):</p>
+<pre class="css"><code>@media print {
+  header::after {
+<mark>    content: url(http://www.google-analytics.com/__utm.gif?<em>[keep reading...]</em>);</mark>  }
+}</code></pre>
+<p>I create a query string server-side (avoiding additional load on the user&#8217;s browser) that includes the current page address, and let Google do the rest (you can get <a href="https://developers.google.com/analytics/resources/articles/gaTrackingTroubleshooting#gifParameters">details on all the parameters</a> from Google&#8217;s support site). Embed this <span class="caps">CSS</span> code in each page via a style block in the document head and you are all set. Since the tracking image isn&#8217;t called unless the print styles are called, and the print styles are called only when the user tries to print the page (a print preview will do it too), I don&#8217;t get any false positives.</p>
+<p>In this code example, you can see the query string appended to the tracking <span class="caps">GIF</span> (please note, this is broken onto multiple lines for readability, so please make sure the <code>url</code> value is all on one line in your code):</p>
+<pre class="css"><code>@media print {
+  header::after {
+    content: url(http://www.google-analytics.com/__utm.gif?
+    utmac=UA-XXXXXXX-X&amp;
+    utmwv=4.3&amp;
+    utmn=2013326124551&amp;
+    utmhn=algonquinstudios.com&amp;
+    utmr=-&amp;
+    utmp=/Engage/Careers&amp;
+    utmt=event&amp;
+    utme=5%28Print*/Engage/Careers%29&amp;
+    utmcc=__utma%3D267504222.1477743002.1364314722.1364314722
+    .1364314722.1%3B%2B
+    __utmb%3D267504222.17.7.1364314901604%3B%2B
+    __utmz%3D267504222.1364314722.1.1.utmcsr%3D%28direct%29
+    |utmccn%3D%28direct%29|utmcmd%3D%28none%29);
+  }
+}</code></pre>
+<p>Note that you have to ensure the correct encoding of parentheses in the event parameter:</p>
+<pre><code>utme=5%28Print*/Engage/Careers%29</code></pre>
+<p>not</p>
+<pre><code>utme=5(Print*/Engage/Careers)</code></pre>
+<p>Without encoding, parentheses would signal the end of the image&#8217;s <span class="caps">URL</span> in the <a href="../../glossary/index.html#term-cascading-style-sheets"><span class="caps">CSS</span></a>.</p>
+<p>The nice part about this approach is that you don&#8217;t have to embed a &ldquo;print me!&rdquo; button on your page as the hook for the event tracking. This also means no matter how a user chooses to print the page, if that user action calls the print styles then it will be logged.</p>
+<figure id="figure-28-3"><img class="jail" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/r/28-3.jpg" /><noscript><img src="../../r/28-3.jpg" /></noscript><figcaption>My site&#8217;s print events in Google Analytics, showing the addresses of pages that have been printed</figcaption></figure>
+<p>Once those events are logged in Google Analytics, I can then cross-reference them to geographic area, browser, platform and so on. With that, I have hard data, not just anecdotal evidence, whether or not users are printing pages, as well as which pages are printed and how frequently.</p>
+<h2>What Tracking Can Reveal</h2>
+<p>Despite what I&#8217;ve cautioned about assumptions, we make them and they may even be a needed part of the planning process. Accompanied by good data, though, these assumptions can be better informed. For users who choose to print a page, for example, I assume they are probably more invested in the content than the average site visitor.</p>
+<p>Perhaps the user needs printed driving directions, or the user likes a chart of some sort enough to want to hang it on his or her cube wall. Either way, this user is choosing to print a page, grab it from the printer and then <em>do something</em> with it. Even though I may not know what the reasoning was, I can comfortably assume it was valuable to that user.</p>
+<figure id="figure-28-4"><img class="jail" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/r/28-4.jpg" /><noscript><img src="../../r/28-4.jpg" /></noscript><figcaption>Google Analytics of my site&#8217;s print events with user metro area as the secondary dimension</figcaption></figure>
+<p>Since implementing tracking on my site, however, I have hard data to help inform these assumptions. It also helped me identify which pages were getting the most use and then work to make sure the printing experience was as good as possible. Instead of a shotgun approach to tweaking my print styles, I could now focus on the places where effort is needed most.</p>
+<p>For example, the most common type of content printed from my site is job postings. These are potential future employees. This is my first opportunity to show these potential employees that the user is important, something that will be a part of any new employee training process. I want my site to demonstrate that we practice what we preach.</p>
+<p>Another commonly-printed range of content is anything related to our products and services. Some quick cross-referencing within Google Analytics can show me if these are printed by one user. This can be an indication that the user is doing some research. Sometimes we can make an educated guess that one batch of printing jobs corresponds to a particular prospect, helping us understand what content interests him or her now.</p>
+<p>I&#8217;ve also found that the contact page, with its map, street address and driving directions, strongly correlates to scheduled meetings. This makes it easy to ask in a meeting if the directions to my office were adequate or could be improved, building on our customer service focus.</p>
+<p>While much of this tracking can be accomplished with third-party tracking bugs on your site paired with <span class="caps">CRM</span> platforms, my approach is effectively free. It builds on tracking you likely already have on your site, tracking that is ubiquitous and less likely to be blocked by privacy-minded users.</p>
+<h2>By Contrast, Carousels &hellip;</h2>
+<p>The ever-present carousel is criticized as being an over-wrought and over-used part of far too many web sites. I don&#8217;t want to pile on, but do want to help provide context for the effort we make building one feature over another when we don&#8217;t have data to justify those efforts.</p>
+<p>Building the carousel feature on my own site took hours. Researching options, testing features, wading through code, experimenting with my <span class="caps">CMS</span> implementation, making it responsive, adding Google Analytics event tracking, and then, integrating it into our <a href="../../glossary/index.html#term-content-management-system"><span class="caps">CMS</span></a> so that it would match the design and allow our authors to maintain it without technical skill.</p>
+<p>Overall I spent maybe 40 hours for this one feature.</p>
+<p>When I look at <a href="http://blog.adrianroselli.com/2013/07/my-carousel-use-stats.html">click-through numbers on the links in my carousel</a>, the numbers nearly match the numbers of pages printed from my site. Yet I only spent about an hour tweaking pre-existing print styles. Had I coded them from scratch, it might have taken me 4 hours on the high end.</p>
+<p>What this tells me is that I spent about ten times as much effort building a feature that gets used as much as another casually-ignored feature, which I believe has a greater overall impact for a user&#8217;s experience on my site. If I am a decision maker with this data, along with the assumptions presented by a skilled developer, I am doing the project a disservice if I don&#8217;t treat print styles as <em>at least</em> equal to the carousel.</p>
+<h2>Find Ways to Track</h2>
+<p>As you evaluate features for a site, research if any of the tools you are considering have built-in tracking methods. If not, then ask for them. For example, I recently had a great conversation with the developer of a <a href="http://www.woothemes.com/products/wooslider/" title="WooSlider">popular carousel</a>, and he added Google Analytics event tracking to his feature list for the next release. Even if you can&#8217;t find a tool that has it built in, try to figure out how you can track it. As I demonstrated with tracking printed pages, it&#8217;s not impossible.</p>
+<p>Don&#8217;t limit your tracking. While I focused on print styles and carousels here, there are many other site features that should be measure to help evaluate the return on investment. Track site features you&#8217;re asked to build, but you aren&#8217;t sure where they should fall in priorities or how much time should be invested in them. Give yourself and your team the ability to make decisions based on real data, not just bias.</p>
+<p>The minimal effort you put into measuring can have a much larger pay-off down the road. You&#8217;ll be better positioned to put effort in the right places, freeing yourself from supporting features that don&#8217;t provide any value for you or your users.</p>
+				
+			
+				<section id="extra-mile">
+					<h1>Going the <span>Extra Mile</span></h1>
+				
+					
+						<p>While this article focused primarily on tracking existing content and working to improve it, you can use a similar technique for some very simple <a href="http://en.wikipedia.org/wiki/A/B_testing" title="A/B testing at Wikipedia">A/B&nbsp;testing</a>.</p>
+<p>If you struggle with the right language in a call-to-action, or perhaps the more compelling image from a set, or even placement of elements on a page, then measure each variation to see which gives you better results. Implementing this can be as simple as adding <code>onclick="_gaq.push(['_trackEvent', 'LinkText', 'Text String 1']);"</code> to a hyperlink (assuming you are using Google Analytics ga.js&nbsp;script).</p>
+<p>In this example, &ldquo;<code>LinkText</code>&rdquo; corresponds to the overall thing you want to track (such as the call to action on a link) and &ldquo;<code>Text String 1</code>&rdquo; corresponds to a specific value you want to track (such as the words in the link). While proper A/B testing relies on the selection between the two options being random, if you cannot do that then give each variation some equal time (by day of week and time of day, perhaps) on the site and see which one has the better&nbsp;numbers.</p>
+<p>This is by no means a perfect way to measure, but in the absence of any measurements of any kind, this can at least get you pointed in a&nbsp;direction.</p>
+				</section>
+			
+				<section id="takeaways">
+				<section id="pitfalls" class="takeaway">
+
+					<h1>Pitfalls to Avoid</h1>
+
+					<ul>
+<li>Make sure you aren’t tracking your own testing. If you are clicking every feature, showing off your site, or know your team is using it outside of any <span class="caps">IP</span> range you block, factor that into your&nbsp;evaluation.</li>
+<li>Be careful of false negatives. If the experience you built is so bad, the feature may get no use. You have to evaluate whether it’s a bad experience no one wants to repeat, or it’s truly&nbsp;useless.</li>
+<li>Not every feature needs to be tracked, especially if Google Analytics is already doing it. For example, you probably don’t need to add tracking to links in your navigation as Analytics can already measure&nbsp;that.</li>
+</ul>
+				</section>
+				<section id="todos" class="takeaway">
+
+					<h1>Things to Do</h1>
+
+					<ul>
+<li>Test regularly. If a feature doesn’t show much use via tracking, but you see it as valuable, check it regularly to make sure it’s still tracking. Sometimes a simple code modification can break your&nbsp;tracking.</li>
+<li>Name your events so they will be unique over time. Repeated values can make event tracking useless. For print tracking, use the <span class="caps">URL</span> of the page being printed. For carousels, find another technique since the value of the href attribute can be used&nbsp;anywhere.</li>
+<li>If you update a plug-in, add-on, or chunk of code to add event tracking, share it! Try to get it included in the original source. Make sure everyone has a chance to benefit from it, even if they choose to exclude&nbsp;it.</li>
+</ul>
+				</section>
+				</section>
+			
+
+
+				<section id="further-reading">
+					<h1>Further Reading</h1>
+					<ul>
+	
+		
+						<li class="article">&#8220;<a href="http://blog.adrianroselli.com/2013/03/tracking-when-users-print-pages.html">Tracking When Users Print Pages</a>&#8221;, <cite>Adrian Roselli</cite>, 26 March 2013</li>
+	
+		
+						<li class="article">&#8220;<a href="http://weedygarden.net/2013/01/carousel-stats/">Carousel Interaction Stats</a>&#8221;, <cite>WeedyGarden</cite>, 22 January 2013</li>
+	
+		
+						<li class="article">&#8220;<a href="http://www.brucelawson.co.uk/2013/turning-off-responsive-web-design/">Turning off responsive web design</a>&#8221;, <cite>Bruce Lawson</cite>, 12 January 2013</li>
+	
+		
+						<li class="article">&#8220;<a href="http://drublic.de/blog/printing-the-web/">Printing The Web</a>&#8221;, <cite>drublic</cite>, 25 March 2013</li>
+	
+		
+						<li class="spec"><a href="http://www.w3.org/TR/css3-page/">CSS Paged Media Module Level 3</a>, W3C, 2013</li>
+	
+					</ul>
+				</section>
+			</div>
+			
+		</article>
+					<section id="comments" style="display: none">
+			<header>
+				<h1 class="question">What features are you current measuring on your sites? What are some others you could track to make more informed&nbsp;decisions?</h1>
+			</header>
+				
+		<div id="comments-listing">
+		<h1>Discussion</h1>
+		<ul class="meta">
+			<li class="thoughts">
+			 			 	Thoughts posted: 4</li>
+			 			 <li class="buttons"><a href="comments.1.html#comment">Tell us</a></li>
+		</ul>
+		
+
+
+
+
+	<ol class="hfeed comments">			<li id="comment-220" class="hentry">
+			<p class="meta">
+				<a rel="bookmark" href="comments.1.html#comment-220"><time class="published" datetime="2014-01-30T07:29:22" pudate="pubdate">2 years ago</time></a>, 
+				<span class="author vcard"><a class="url" href="https://www.google.com/profiles/109699144693654830517"><b class="fn">Jonthan Platts</b><img class="photo" src="http://www.gravatar.com/avatar/18ad03f19c609a042546377c847d5e1c?s=48&d=http://cdn.webstandardssherpa.com/i/a/default_set/shirley.png" alt=""/></a></span>&nbsp;said:</p>
+				<blockquote class="entry-content">
+				
+					<p>Fantastic tutorial i like it and really helpful for me especially code example.<br />
+<a href="http://soapagency.co.uk">www.soapagency.co.uk</a></p>
+				</blockquote>
+		</li>
+	
+
+				<li id="comment-230" class="hentry">
+			<p class="meta">
+				<a rel="bookmark" href="comments.1.html#comment-230"><time class="published" datetime="2014-03-05T19:09:14" pudate="pubdate">1 year ago</time></a>, 
+				<span class="author vcard"><a class="url" href="http://twitter.com/webcraftsman"><b class="fn">Jeff Bridgforth</b><img class="photo" src="http://www.gravatar.com/avatar/30ce93ba8fb8ffb6adbf6f011529757a?s=48&d=http://cdn.webstandardssherpa.com/i/a/default_set/shirley.png" alt=""/></a></span>&nbsp;said:</p>
+				<blockquote class="entry-content">
+				
+					<p>Test&nbsp;comment.</p>
+				</blockquote>
+		</li>
+	
+
+				<li id="comment-276" class="hentry">
+			<p class="meta">
+				<a rel="bookmark" href="comments.1.html#comment-276"><time class="published" datetime="2015-08-24T07:43:41" pudate="pubdate">3 months ago</time></a>, 
+				<span class="author vcard"><a class="url" href="https://www.facebook.com/app_scoped_user_id/10155965061990564/"><b class="fn">Moritz Profitlich</b><img class="photo" src="http://www.gravatar.com/avatar/7ebf379aebf244ab6a545a80de3652e9?s=48&d=http://cdn.webstandardssherpa.com/i/a/default_set/shirley.png" alt=""/></a></span>&nbsp;said:</p>
+				<blockquote class="entry-content">
+				
+					<p>Hello Adrian, this print tracking solution is the best I have found. Thank&nbsp;you!</p>
+
+<p>Could you please further explain, how to create the query string? I understand that I need to add all variables by myself (best server side). How to you choose the version (utmwv), why is the full url empty (utmr), what to put into umte and utmp and how to tell the cookies&nbsp;(utmcc)?</p>
+
+<p>Thanks a lot –&nbsp;Moritz</p>
+				</blockquote>
+		</li>
+	
+
+				<li id="comment-277" class="hentry staff">
+			<p class="meta">
+				<a rel="bookmark" href="comments.1.html#comment-277"><time class="published" datetime="2015-08-27T19:48:41" pudate="pubdate">3 months ago</time></a>, 
+				<span class="author vcard"><a class="url" href="http://adrianroselli.com/"><b class="fn">Adrian Roselli</b><img class="photo" src="http://www.gravatar.com/avatar/6ab7b8d621d1842ce733228fbc6d1ecf?s=48&d=http://cdn.webstandardssherpa.com/i/a/default_set/shirley.png" alt=""/></a></span>&nbsp;said:</p>
+				<blockquote class="entry-content">
+				
+					<p>Moritz,</p>
+
+<p>I&#8217;m glad you found the article useful! Let me see if I can help you out a&nbsp;bit&#8230;</p>
+
+<p>1. For the utmwv value I arbitrarily chose 4.3 for reasons I no longer recall. On the same page I had a script with version 5.4.0 that did not cause any&nbsp;issues.</p>
+
+<p>2. Utmr is the referrer value, which I don&#8217;t care about in my print tracking, so I leave it blank (I used a dash in my own&nbsp;script).</p>
+
+<p>3. Utme is where you write the event with the page <span class="caps">URL</span> so you can track&nbsp;it.</p>
+
+<p>4. For utmp I always write the current page <span class="caps">URL.</span></p>
+
+<p>5. The cookies for utmcc should come from a cookies array in your current <span class="caps">CMS</span> or platform. Even if you leave it blank, you must still populate the __utma and __utmz values, passed as encoded parameters for the tracking to&nbsp;work.</p>
+
+<p>If that isn&#8217;t enough detail, I have a blog post that goes deeper into how I constructed the string, included the places where I was confused (and therefore has room for improvement):&nbsp;http://adrianroselli.com/2013/03/tracking-when-users-print-pages.html</p>
+
+<p>I hope that&nbsp;helps!</p>
+				</blockquote>
+		</li>
+	</ol>
+			
+	</div>
+	
+<section id="comment">
+	<h1>Share Your Thoughts</h1>
+			<p>Please <a href="../../log-in/index.html%3Freturn=%252Freviews%252Ftracking-printed-pages%252F.html" style="display: none">Log in</a> or <a href="../../sign-up/index.html%3Freturn=%252Freviews%252Ftracking-printed-pages%252F.html" style="display: none">Sign up</a> to share your thoughts.</p>
+		</section>
+
+
+			</section>
+		
+
+		
+		
+		
+	   <ul id="pagination">
+	     <li class="prev"><a href="../think-modularly/index.html"><em>Previous Entry: </em>Think&nbsp;Modularly</a></li>
+	     <li class="next"><a href="../breaking-the-perfectionism-procrastination-infinite-loop/index.html"><em>Next Entry: </em>Breaking the Perfectionism–Procrastination Infinite&nbsp;Loop</a></li>
+	   </ul>
+
+		
+		<footer class="sidebar" role="complementary">
+		
+				
+		<section id="author" class="sidebar-item vcard byline">
+			<h1>Your Sherpa</h1>
+	
+	
+		
+		<h2><a class="fn url" href="../../about/authors/adrian-roselli/index.html">
+			<img class="photo" src="../../i/a/uploads/avatar_2311.jpg" alt=""/>Adrian Roselli</a></h2>
+		<p>Adrian Roselli is a developer at and Vice President of <a href="http://algonquinstudios.com/">Algonquin Studios</a>, as well as an invited expert in the <span class="caps">WC</span>3 <span class="caps">HTML</span> Working&nbsp;Group.</p>
+		<p class="more"><a href="../../about/authors/adrian-roselli/index.html">More about Adrian</a></p>
+	
+</section>
+
+			
+			
+		
+			
+				
+
+			<section id="share" class="sidebar-item entry-unrelated">
+
+				<h1>Share</h1>
+
+				<p id="twitter"><a href="https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fwebstandardssherpa.com%2Freviews%2Ftracking-printed-pages%2Fcomments&amp;source=tweetbutton&amp;text=Tracking+Printed+Pages+(or+How+to+Validate+Assumptions)+by+@aardrian&amp;url=http%3A%2F%2Fwebstandardssherpa.com%2Freviews%2Ftracking-printed-pages%2Fcomments&amp;via=StandardsSherpa%20%23wssherpa%20%23sherpa28&amp;related=WaSP:Web%20Standards" title="Tweet"><img src="http://cdn.webstandardssherpa.com/i/button-twitter.png" alt=""/></a> <b class="hashtag"><em>Hashtag:</em> #sherpa28</b></p>
+                <p id="facebook"><a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fwebstandardssherpa.com%2Freviews%2Ftracking-printed-pages%2Fcomments" title="Share on Facebook"><img src="http://cdn.webstandardssherpa.com/i/button-facebook.png" alt=""/></a></p>
+				<p id="linkedin"><a href="https://www.linkedin.com/cws/share?url=http%3A%2F%2Fwebstandardssherpa.com%2Freviews%2Ftracking-printed-pages%2Fcomments&amp;original_referer=http%3A%2F%2Fwebstandardssherpa.com%2Freviews%2Ftracking-printed-pages%2Fcomments" title="Share on LinkedIn"><img src="http://cdn.webstandardssherpa.com/i/button-linkedin.png" alt=""/></a></p>
+				<p id="google_plus"><a href="https://plus.google.com/share?url=http%3A%2F%2Fwebstandardssherpa.com%2Freviews%2Ftracking-printed-pages%2Fcomments" title="Share on Google Plus"><img src="http://cdn.webstandardssherpa.com/i/button-googleplus.png" alt=""/></a></p>
+			</section>
+			
+			
+						<section id="standards-fact" class="sidebar-item entry-unrelated">
+
+				<h1>Standards Fact</h1>
+
+
+				<p>As of January 2009, all websites built for the <span class="caps">UK</span> government&nbsp;must follow a set of guidelines that includes compliance with web&nbsp;standards.</p>
+
+			</section>
+
+			
+	<section id="submit-a-site" class="sidebar-item entry-unrelated">
+		<p><a href="../../submit-a-site/index.html"><img src="../../i/feed-shirley-222x99.png" alt="Submit a site for Review" /></a></p>
+	</section>
+
+
+
+		</footer>
+	
+	  </div>
+  		<form style="display: none" id="search-form" method="post" action="../../index.html"  >
+<div class='hiddenFields'>
+<input type="hidden" name="ACT" value="6" />
+<input type="hidden" name="XID" value="c00c262ec8c1b4d18d6582807ae4a483eea67e83" />
+<input type="hidden" name="RES" value="10" />
+<input type="hidden" name="meta" value="vJed+IEhaFn3W7jNVVY8C6VK4KKB0doGerxtt+3TXJkJkrK5M3OFhLNfv7UrH+uJhVYy/SM2Y8CEBzxS9ZAY+5Ry234MoWdF0KwpptDKKX/rJJg1NP4Y7SntDPwMKWd0mrV/+nbWgdpLXyGAXHtWDd/W8QMHWePL8qfhqCpJzaK4pU2LxFEhOj26ZDN4P+8d8hXffYqEVMiMRDrkUYAlZAa+r08a/igafmWKpfXqcmFAHWq/qsh+zoaTz9V6wiUJl2MMAdfHTEZ76nZbWvE5NUZpcvtxRexke8gSzhsFUK46dJJ8pJfmOvPccKB8bfwmBU4cgAZ668OleVhPUZRHiYhGfX21C2DodUFydLdhuEPR2Upj1jdw5RfdVF8nWXwA5G5T4DRd4xKMtKvVvr1BpJKZ37Gid+DBZjiqIcAhYCY=" />
+<input type="hidden" name="site_id" value="1" />
+</div>
+
+
+		<p role="search">
+			<label for="query">Looking for something?</label>
+			<input type="search" name="keywords" id="query" value=""/>
+			<button type="submit">Search</button>
+		</p>
+	</form>
+
+    	<nav id="nav-account" style="display: none" role="navigation">
+		<ul class="buttons">
+	
+			<li><a href="../../sign-up/index.html" style="display: none">Sign up</a></li>
+	
+	
+			<li><a href="../../log-in/index.html" style="display: none">Log in</a></li>
+	
+		</ul>
+	</nav>
+  <footer role="contentinfo" id="page-footer">
+	<div id="site-info">
+			<div id="elevator-pitch" class="footer-item">
+
+		<p>Web Standards Sherpa&rsquo;s experts provide helpful, pragmatic and up-to-date advice on best practices for web professionals everywhere.</p>
+<ul class="more">
+<li><a href="../../about/index.html">More about us</a></li>
+<li><a href="../../contact/index.html" style="display: none">Contact us</a></li>
+</ul>
+
+	</div>
+			<nav id="nav-complete" role="navigation">
+		<section class="participate" style="display: none">
+			<h1>Participate</h1>
+			<ul>
+				<li><a href="../../submit-a-site/index.html">Submit a site</a></li>
+				<li><a href="../../submit-a-question/index.html">Submit a question</a></li>
+				<li><a href="../../sign-up/index.html" style="display: none">Sign up</a><a href="../../log-in/index.html" style="display: none">Log in</a></li>
+				
+			</ul>
+		</section>
+		<section class="learn">
+			<h1>Learn</h1>
+			<ul>
+				<li><mark><a href="../index.html">Reviews</a></mark></li>
+				<li><a href="../../ask-the-sherpas/index.html">Ask Sherpas</a></li>
+				<li><a href="../../about/authors/index.html">Authors</a></li>
+				<li><a href="../../glossary/index.html">Glossary</a></li>
+				
+			</ul>
+		</section>
+	</nav>
+
+			<section id="sponsors" class="footer-item">
+
+		<h1>We thank our sponsors</h1>
+
+				<ol class="partners">					<li>
+											<a href="http://www.microsoft.com"><img src="../../i/p/microsoft-mono.png" alt="Microsoft"/></a>
+										</li>
+				
+									<li>
+											<a href="http://mailchimp.com"><img src="../../i/p/mc-mono.png" alt="MailChimp"/></a>
+										</li>
+				
+									<li>
+											<a href="http://developer.mozilla.org"><img src="../../i/p/mozilla-mono.png" alt="Mozilla"/></a>
+										</li>
+				
+									<li>
+											<a href="http://mediatemple.net"><img src="../../i/p/mt-mono.png" alt="Media Temple"/></a>
+										</li>
+				</ol>
+
+	</section>
+	</div>
+	<div id="terms" class="source-org vcard">
+		<p id="ownership"><a xmlns:dct="http://purl.org/dc/terms/" href="../../index.html" property="dct:title" rel="cc:attributionURL">Web Standards Sherpa</a> is an outreach effort by the <a class="org fn url" xmlns:cc="http://creativecommons.org/ns#" href="http://webstandards.org" property="cc:attributionName">Web Standards Project (WaSP)<img src="../../i/WaSP-logo-mono.png" alt="" /></a>.</p>
+<!--		<p id="network">This site is a proud member of the <a rel="license" href="http://network.smashingmagazine.com/">Smashing Network<img src="/i/p/smashing-mono.png" alt="" /></a>.</p> -->
+		<p id="license">The content of this site is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons<img src="../../i/license.png" alt="" /></a>.</p>
+	</div>
+	
+  </footer>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+	<script>window.jQuery || document.write("<script src='../../j/jquery.js'>\x3C/script>")</script>
+	<script src="../../j/main.js"></script>
+	
+					<script>(function(e,t){var n=t(jQuery),r=typeof define=="function"&&define.amd;r?define(e,["jquery"],n):(this.jQuery||this.$||this)[e]=n})("jail",function(e){function s(e,n){var r=!1;!n||(r=n.data("triggerElem")),!!r&&typeof r.on=="function"&&(r.on(e.event+"."+e.id,{options:e,images:n},u),t.on("resize."+e.id,{options:e,images:n},u))}function o(e){var t=0;if(e.length===0)return;for(;;){if(t===e.length)break;e[t].getAttribute("data-src")?t++:e.splice(t,1)}}function u(n){var i=n.data.images,u=n.data.options;i.data("poller",setTimeout(function(){r=e.extend({},i),o(r),e(r).each(function(){if(this===window)return;f(u,this,r)});if(a(r)){e(n.currentTarget).unbind(n.type+"."+u.id);return}if(u.event!=="scroll"){var l=/scroll/i.test(u.event)?i.data("triggerElem"):t;u.event="scroll",i.data("triggerElem",l),s(u,e(r))}},u.timeout))}function a(t){var n=!0;return e(t).each(function(){!e(this).attr("data-src")||(n=!1)}),n}function f(n,r,i){var s=e(r),o=/scroll/i.test(n.event)?i.data("triggerElem"):t,u=!0;n.loadHiddenImages||(u=h(s,o,n)&&s.is(":visible")),u&&l(o,s,n.offset)&&c(n,s)}function l(e,t,n){var r=e[0]===window,i=r?{top:0,left:0}:e.offset(),s=i.top+(r?e.scrollTop():0),o=i.left+(r?e.scrollLeft():0),u=o+e.width(),a=s+e.height(),f=t.offset(),l=t.width(),c=t.height();return s-n<=f.top+c&&a+n>=f.top&&o-n<=f.left+l&&u+n>=f.left}function c(t,n){var s=new Image;s.onload=function(){n.hide().attr("src",s.src),n.removeAttr("data-src"),t.effect?(t.speed?n[t.effect](t.speed):n[t.effect](),n.css("opacity",1),n.show()):n.show(),o(r),!t.callbackAfterEachImage||t.callbackAfterEachImage.call(this,n,t),a(r)&&!!t.callback&&!i&&(t.callback.call(e.jail,t),i=!0)},s.src=n.attr("data-src")}function h(n,i,o){var u=n.parent(),a=!0;while(u.length&&u.get(0).nodeName.toUpperCase()!=="BODY"){if(u.css("overflow")==="hidden"){if(!l(u,n,o.offset)){a=!1;break}}else if(u.css("overflow")==="scroll"&&!l(u,n,o.offset)){a=!1,e(r).data("triggerElem",u),o.event="scroll",s(o,e(r));break}if(u.css("visibility")==="hidden"||n.css("visibility")==="hidden"){a=!1;break}if(i!==t&&u===i)break;u=u.parent()}return a}var t=e(window),n={id:"jail",timeout:1,effect:!1,speed:400,triggerElement:null,offset:0,event:"load",callback:null,callbackAfterEachImage:null,placeholder:!1,loadHiddenImages:!1},r=[],i=!1;return e.jail=function(t,r){var i=t||{},s=e.extend({},n,r);e.jail.prototype.init(i,s),/^(load|scroll)/.test(s.event)?e.jail.prototype.later.call(i,s):e.jail.prototype.onEvent.call(i,s)},e.jail.prototype.init=function(n,r){n.data("triggerElem",r.triggerElement?e(r.triggerElement):t),!r.placeholder||n.each(function(){e(this).attr("src",r.placeholder)})},e.jail.prototype.onEvent=function(t){var n=this;t.triggerElement?s(t,n):n.on(t.event+"."+t.id,{options:t,images:n},function(t){var n=e(this),i=t.data.options,s=t.data.images;r=e.extend({},s),c(i,n),e(t.currentTarget).unbind(t.type+"."+i.id)})},e.jail.prototype.later=function(t){var n=this;setTimeout(function(){r=e.extend({},n),n.each(function(){f(t,this,n)}),t.event="scroll",s(t,n)},t.timeout)},e.fn.jail=function(t){return new e.jail(this,t),r=[],this},e.jail});
+
+(function($){$("img.jail").jail({offset:100});}(jQuery));</script>
+				
+			<script src="../../j/live-comment-preview.js" type="text/javascript"></script>
+		
+	
+
+	<!-- Just to see if this works -->
+	<!--[if lte IE 6]><script src="/j/ie6.js"></script><![endif]-->
+
+
+			<script type="text/javascript">
+			  var rpxJsHost = (("https:" == document.location.protocol) ? "https://" : "http://static.");
+			  document.write(unescape("%3Cscript src='" + rpxJsHost + "rpxnow.com/js/lib/rpx.js' type='text/javascript'%3E%3C/script%3E"));
+			</script>
+
+			<script type="text/javascript">
+				RPXNOW.overlay = true;
+		  		RPXNOW.language_preference = "en";
+			  	RPXNOW.init({appId: 'cdnifhbomckchfhfgbpl', xdReceiver: '/rpx_xdcomm.html'});
+			</script>
+
+	<div id="ClickTaleDiv" style="display: none;"></div>
+	<script type="text/javascript">
+		if ( document.location.protocol!='https:' )
+		{
+			$.getScript('http://s.clicktale.net/WRb6.js',function(){
+				if ( typeof ClickTale=='function' )
+				{ClickTale(16473,0.1,"www02");}
+			});
+		}
+	</script>
+</body>
+</html>
+

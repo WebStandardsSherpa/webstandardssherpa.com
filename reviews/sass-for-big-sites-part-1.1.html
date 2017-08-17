@@ -1,0 +1,525 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" id="webstandardssherpa_com">
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Language" content="en"/>
+	
+
+	<title>Sass for Big Sites, Part 1 - Web Standards Sherpa</title>
+	<meta name="robots" content="index,follow,archive" />
+	 <link rel="canonical_url" href="sass-for-big-sites-part-1/index.html" /> 
+	<meta name='description' content='In part 1 of our series on Sass for large sites and teams, Jackie shares how Behance uses Sass to maintain code consistency and streamline development across a large codebase.' />
+	<meta name='DC.description' content='In part 1 of our series on Sass for large sites and teams, Jackie shares how Behance uses Sass to maintain code consistency and streamline development across a large codebase.' />
+	<meta name='keywords' content='CSS,Workflow / Process' />
+	<meta name='DC.subject' content='CSS,Workflow / Process' />
+
+	<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
+	<link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
+	<meta name="DC.title" content="Sass for Big Sites, Part 1 - Web Standards Sherpa" />
+	<meta name="DC.creator" content="Jackie Balzer" />
+	<meta name="DC.publisher" content="The Web Standards Project" />
+	<meta name="DC.date.created" scheme="DCTERMS.W3CDTF" content="2015-12-07T14:43:35-05:00" />
+	<meta name="DC.date.modified" scheme="DCTERMS.W3CDTF" content="1453-05-13T10:00:00-05:00" />
+	<meta name="DC.date.valid" scheme="DCTERMS.W3CDTF" content="2015-12-13T16:43:35-05:00" />
+	<meta name="DC.type" scheme="DCTERMS.DCMIType" content="Text" />
+	<meta name="DC.rights" scheme="DCTERMS.URI" content="(cc) Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License">
+	<meta name="Copyright" content="(cc) Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License"/>
+	<meta name="DC.format" content="text/html" />
+	<meta name="DC.identifier" scheme="DCTERMS.URI" content="http://webstandardssherpa.com/reviews/sass-for-big-sites-part-1/" />
+	<meta name="MSSmartTagsPreventParsing" content="true"/>
+	<meta name="Rating" content="General"/>
+
+	<meta property="og:title" content="Sass for Big Sites, Part 1"/> 
+	<meta property="og:type" content="article"/> 
+	<meta property="og:url" content="http://webstandardssherpa.com/reviews/sass-for-big-sites-part-1/"/> 
+	<meta property="og:image" content="http://webstandardssherpa.com/i/fb-backpack.png"/> 
+	<meta property="og:site_name" content="Web Standards Sherpa"/> 
+	<meta property="og:description" content="In part 1 of our series on Sass for large sites and teams, Jackie shares how Behance uses Sass to maintain code consistency and streamline development across a large codebase."/>
+	<meta property="fb:admins" content="100002108202285"/> 
+	
+	<!-- Twitter -->
+	<meta name="twitter:card" value="summary"/>
+	<meta name="twitter:site" value="@StandardsSherpa"/>
+	<meta name="twitter:creator" value="@jackiebackwards"/>
+
+	
+
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="home" href="../index.html"/>
+	<link rel="copyright" href="sass-for-big-sites-part-1.1.html#license"/>
+	<link rel="shortcut icon" type="image/png" href="../favicon.png"/>
+	<link rel="author" type="text/plain" href="../humans.txt.html"/>
+
+	<!--[if lte IE 8]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<!--[if (lte IE 8)&(!IEMobile)]>
+    <link rel="stylesheet" href="/c/old-ie.css" media="screen">
+	<![endif]-->
+	<!--[if gt IE 8]><!-->
+		<link rel="stylesheet" type="text/css" href="../c/main.css" media="screen"/>
+	<!--<![endif]-->
+	<!--[if IEMobile 7]>
+		<link rel="stylesheet" href="/c/main.css" media="screen">
+		<link rel="stylesheet" href="/c/windows7-mobile.css" media="screen">
+	<![endif]-->
+	
+	<link rel="alternate" type="application/rss+xml" title="Web Standards Sherpa Reviews (Summary)" href="http://feeds.feedburner.com/Web-Standards-Sherpa-Reviews-Summary"/>
+	<link rel="alternate" type="application/rss+xml" title="Web Standards Sherpa Reviews (Full Text)" href="http://feeds.feedburner.com/Web-Standards-Sherpa-Reviews"/>
+	<link rel="alternate" type="application/rss+xml" title="Web Standards Sherpa Discussions" href="http://feeds.feedburner.com/Web-Standards-Sherpa-Discussions"/>
+
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-176472-9']);
+		_gaq.push(['_trackPageview']);
+		(function() {
+		  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+	<script type="text/javascript">
+		var WRInitTime=(new Date()).getTime();
+	</script>
+</head>
+<body id="review">
+
+
+	<header role="banner" id="page-header">
+		<h4 id="logo"><a href="../index.html" title="Return to the homepage">Web Standards Sherpa</a></h4>
+	</header>
+
+
+		<nav id="nav-primary" role="navigation">
+		<ul><li id="nav-home"><a href="../index.html">Home</a></li><li id="nav-reviews"><mark><a href="index.html">Reviews</a></mark></li><li id="nav-ask-the-sherpas"><a href="../ask-the-sherpas/index.html">Ask the Sherpas</a></li>		</ul>
+
+		
+	</nav>
+
+	
+
+	<div id="content">
+
+
+		<article class="hentry">
+			<header>
+				<h1 class="entry-title">Sass for Big Sites, Part 1</h1>
+				<ul class="meta">
+	
+					<li class="author">by
+						<a href="../about/authors/jackie-balzer/index.html">Jackie Balzer</a>
+					</li>
+					<li class="issue"><i>Issue </i><abbr title="Number">No.</abbr> 37</li>
+					<li class="published"><time datetime="2014-12-16T12:00:00" pubdate="pubdate">16 December 2014</time></li>
+					<li class="categories">
+						<ul>
+	
+							<li><a rel="tag" href="by-topic/css/index.html">CSS</a></li>
+	
+							<li><a rel="tag" href="by-topic/workflow-process/index.html">Workflow / Process</a></li>
+	
+						</ul>
+					</li>
+				</ul>
+				
+<div id="readspeaker_button1" class="rs_skip rsbtn rs_preserve">
+    <a class="rsbtn_play" accesskey="L" title="Listen to this page using ReadSpeaker" href="http://app.na.readspeaker.com/cgi-bin/rsent?customerid=6758&amp;lang=en_us&amp;readid=content&amp;url=http%3A%2F%2Fwebstandardssherpa.com%2Freviews%2Fsass-for-big-sites-part-1">
+        <span class="rsbtn_left rsimg rspart"><span class="rsbtn_text"><span>Listen</span></span></span>
+        <span class="rsbtn_right rsimg rsplay rspart"></span>
+    </a>
+</div>
+
+			</header>
+			
+			<div class="entry-content">
+				<figure id="figure-37-1"> <img class="jail" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/r/37-1.png" /><noscript><img src="../r/37-1.png" /></noscript> </figure>
+<p>Writing <span class="caps">CSS</span> for a giant, expanding, ever-evolving website is hard. Writing maintainable <span class="caps">CSS</span> that is consistent, easy to understand, simple to reuse and hard to break is even harder! At <a href="https://www.behance.net/">Behance</a>, our website reaches over 130 pages, many of which exist in multiple states (e.g. logged in or out) and in a wide range of ages (some pages are brand new, some are over a year old, and one or two persist from over 3 years ago!). We&rsquo;re continuously adding, changing or even slimming down features. And with the constant evolution of the site &mdash; and the team that builds it &mdash; we face many challenges in keeping the site and its codebase organized. Over the years, our process has changed and grown, and Sass has made a tremendous impact on our workflow, how we write code, and how we tackle all of the challenges of maintaining a huge codebase.</p>
+<h1>Keepers of Consistency</h1>
+<p>As front-end developers, I like to say that we are the &ldquo;keepers of consistency&rdquo; &mdash; the ones responsible for making sure shared <span class="caps">UI</span> elements and components are consistent across the entire site for a cohesive look and feel. <a href="http://sass-lang.com/">Sass</a> aids us in ensuring consistency in several ways:</p>
+<ul>
+<li>We maintain a list of variables for global values, mixins, and functions that are reusable across the site.</li>
+<li>We use partials for file management and code organization.</li>
+<li>We use some extra techniques for boosting our responsive code</li>
+</ul>
+<h1>Defaults and Overrides</h1>
+<p><a href="http://lesscss.org">All popular</a> <a href="http://learnboost.github.io/stylus/"><span class="caps">CSS</span> pre-processors</a> today let you use variables out of the box, something <span class="caps">CSS</span> developers dreamed of for years! For this, we keep a <em>_variables.scss</em> file in our root <em>/sass</em> folder which gets <a href="http://sass-lang.com/guide">imported</a> into every Sass file (along with a <em>_mixins.scss</em> and a <em>_functions.scss</em>).</p>
+<p>Additionally, sometimes we create smaller <em>_variables.scss</em> files inside page-specific folders if a section of the site needs to share a set of variables that the other parts of the site don&rsquo;t care about. For example, our root <em>_variables.scss</em> contains stuff like this:</p>
+<pre><code>// colors
+$brand-color: #005cff;
+$base-color: #3d3d3d;
+$alt-color: #ededed;
+
+// input dimensions
+$input-height-small: 25px;
+$input-height-normal: 31px;
+$input-height-large: 34px;
+
+// general-use breakpoints
+$medium-upper-limit: 1024px !default;
+$small-upper-limit: 603px !default;
+
+$break-large: ($medium-upper-limit + 1);
+$break-medium: ($small-upper-limit + 1) $medium-upper-limit;
+$break-small: 0 $small-upper-limit;
+$break-small-and-medium: 0 $medium-upper-limit;</code></pre>
+<p>The <code>!default</code> flag on some of our variables lets us <a href="http://sass-lang.com/documentation/file.SASS_REFERENCE.html#variable_defaults_">define default values</a>. That is, if the variable has already been assigned, it won&rsquo;t be reassigned. But if it doesn&rsquo;t have a value yet, it will be given one. We sometimes use this to override global values that we want to modify for specific situations.</p>
+<p>Many of our reusable components calculate dimensions based on these global variables. For example, one of our reusable components is a grouping of project covers that can appear 1, 2 or 3 images wide depending on our breakpoint values. The reusable component&rsquo;s partial, <em>_gallery_projects.scss</em> automatically outputs the styles needed for the breakpoints defined above.</p>
+<figure id="figure-37-2"> <img class="jail" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/r/37-2.png" /><noscript><img src="../r/37-2.png" /></noscript> <figcaption>On a large display, our home page can be sorted by &ldquo;People&rdquo;, where each row includes a preview of each user&rsquo;s three latest projects.</figcaption> </figure> <figure id="figure-37-3"> <img class="jail" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/r/37-3.png" /><noscript><img src="../r/37-3.png" /></noscript> <figcaption>When viewing a list of a user&rsquo;s collections on a smaller device like an iPad, you can see a preview of the two most recently added projects. On a bigger screen, it expands so you can see three.</figcaption> </figure> <figure id="figure-37-4"> <img class="jail" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/r/37-4.png" /><noscript><img src="../r/37-4.png" /></noscript> <figcaption>On a small device like an iPhone, the layout adjusts so you can see three project covers at a time.</figcaption> </figure>
+<p>Any time we want to change the breakpoints for this component, we need to override the global values that the mixin is using like so:</p>
+<pre><code>$medium-upper-limit 1200px;
+$small-upper-limit: 0 699px;
+@include '_variables.scss';
+@include '_gallery_projects.scss';</code></pre>
+<p>Since the <code>$medium-upper-limit</code> and <code>$small-upper-limit</code> variables are defined with the <code>!default</code> flag, the <code>$break-medium</code> and <code>$break-small</code> variables are calculated using the new values. and the Sass will compile using the newly defined variables.</p>
+<h1>Managing Files</h1>
+<p>The first major impact Sass has for us is in terms of the structure and management of our <span class="caps">CSS</span> (Sass, that is) files and folders. There are two components to this:</p>
+<ul>
+<li>How we structure top-level files</li>
+<li>How we structure and use smaller reusable chunks of code</li>
+</ul>
+<p>Our top-level Sass files compile directly into <span class="caps">CSS</span> and are loaded on the page via a normal <code>link</code> element, and our modular code lives within partials. Here&rsquo;s an abbreviated look at what our folder structure looks like:</p>
+<figure id="figure-37-5"> <img class="jail" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/r/37-5.png" /><noscript><img src="../r/37-5.png" /></noscript> <figcaption>A top-level look at how our Sass and compiled <span class="caps">CSS</span> files and folders look</figcaption> </figure>
+<h2>Top-level Files</h2>
+<p>Our top-level files all sit in the <em>/sass</em> folder root. Every page loads our base files, <em>normalize.css</em> and <em>global.css</em>, and then each individual page additionally loads its own <span class="caps">CSS</span> file(s). Here&rsquo;s an example snippet of what the <code>head</code> of a user&rsquo;s profile page:</p>
+<pre><code>&lt;link rel="stylesheet" href="/normalize.css" /&gt;
+&lt;link rel="stylesheet" href="/global.css" /&gt;
+&lt;link rel="stylesheet" href="/profile.css" /&gt;</code></pre>
+<p>In production, we minify and concatenate our <span class="caps">CSS</span> files so they are as small and as few as possible. Our build scripts and <span class="caps">PHP</span> framework handles this for us.</p>
+<h2>Smaller Chunks of Code</h2>
+<p>The second way we use Sass for file management deals with smaller chunks of code. We use <a href="http://sass-lang.com/documentation/file.SASS_REFERENCE.html#partials">Sass partials</a>, files that do not compile directly to a <span class="caps">CSS</span> file on their own, in two ways:</p>
+<ul>
+<li>Reusable components</li>
+<li>General code organization</li>
+</ul>
+<p>We often split up particularly large page-specific Sass files into into smaller partials, even if they will not be re-used, to help clearly delineate where code is. Here&rsquo;s our abbreviated view of our file structure, with the folders from the previous example expanded:</p>
+<figure id="figure-37-6"> <img class="jail" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/r/37-6.png" /><noscript><img src="../r/37-6.png" /></noscript> <figcaption>Sass and compiled <span class="caps">CSS</span> directory structure, with the folders expanded</figcaption> </figure>
+<h3>Global and Reusable Components</h3>
+<p>Our <em>global.scss</em> file contains Sass for standard things like the site background color, font stacks, etc. We use partials to compartmentalize the code for global elements such as buttons, dialogs, tooltips, icons and much more, which are in a folder called <em>/_global</em>. Then, in our <em>global.scss</em> file, we use the <a href="https://github.com/chriseppstein/sass-globbing">sass-globbing</a> extension to import them all at once:</p>
+<pre><code>@import '_global/*.scss';</code></pre>
+<p>The sass-globbing extension lets us import everything in our <em>/_global</em> folder in one line, and the contents of each partial end up in the compiled <em>global.css</em> file. Using this technique, we are free from having to manage a long list of imports, avoiding something like:</p>
+<pre><code>@import '_global/_buttons.scss';
+@import '_global/_dialogs.scss';
+@import '_global/_icons.scss';
+@import '_global/_tooltip.scss';
+@import '_global/_warnings.scss';
+...</code></pre>
+<p>In addition to the <em>/_global</em> folder, we keep a top-level <em>/_components</em> folder for components that can be used on any page, but that are not used on <strong>every</strong> page. The difference here is that the partials in the <em>/_global</em> folder are automatically included in our <em>global.scss</em> file, and the files in the <em>/_components</em> folder can be imported by any individual file that needs it. Having two separate folders make it easy to know at a glance which ones are okay to cherry-pick and which ones are already available on every page. The underscore in the folder name makes it clear that those folders only contain partials.</p>
+<h3>Partials for Code Organization</h3>
+<p>For page-specific partials (things that will not be re-used and are only for code organization), they live within a folder named for that page. For example, the imports in our <em>project.scss</em> file look like so:</p>
+<pre><code>@import '_components/_multiple-owners.scss';
+@import 'project/_comments.scss';
+@import 'project/_sidebar.scss';</code></pre>
+<p>The <em>_comments.scss</em> and <em>_sidebar.scss</em> partials style specific parts of the project page, so they live inside the <em>/project</em> folder. Though they are not re-used on other pages, the code is complex or lengthy enough to warrant a separation from the main <em>project.scss</em> file to make the code is easier to navigate. (Our <em>project.scss</em> file would be over 600 lines long if we didn&rsquo;t split it into smaller pieces!)</p>
+<p>Overall, we have over 40 general-use partials in our <em>/_components</em> folder, each one used in two or more places around the site. We also have at least 15 global partials in our <em>/_global</em> folder. Sass partials and the sass-globbing extension help us structure our code in a way that makes managing and using it infinitely easier and more clear than if we tried to attempt this in vanilla <span class="caps">CSS.</span> In fact, I can hardly even imagine a vanilla <span class="caps">CSS</span> solution to this! Without partials, our giant <span class="caps">CSS</span> code base would be much bulkier and incredibly difficult to manage.</p>
+<h2>Responsive Breakpoints</h2>
+<p>In the same way that our <span class="caps">CSS</span> is responsive, our JavaScript must be as well. Some interfaces and interactions change depending on browser size, so both sides of the code must use the same breakpoint values in order for the user experience to be seamless. To prevent having to hard-code values in two separate parts of the code, we use <a href="https://gist.github.com/jackie/5976398">a technique</a> that allows us to store our breakpoints in a <span class="caps">JSON</span> file and retrieve them from both the Sass and the JavaScript side.</p>
+<p>For example, we can define our breakpoints in a <span class="caps">JSON</span> file:</p>
+<pre><code>{
+  "phone"  : "all and (max-width: 603px)",
+  "desktop": "all and (min-width: 1025px)",
+  "tablet" : "all and (min-width: 604px) and (max-width: 1024px)"
+}</code></pre>
+<p>Then, using a custom Ruby function to load and parse the <span class="caps">JSON</span> file, we can access those values in our Sass:</p>
+<pre><code>$break-desktop: get_breakpoint(desktop);
+$break-tablet: get_breakpoint(tablet);
+$break-phone: get_breakpoint(phone);
+ 
+@media #{$break-desktop} {
+  body {
+    background: red;
+  } 
+}</code></pre>
+<p>Since the breakpoints are stored in <span class="caps">JSON</span>, you can use something like <a href="http://requirejs.org/">require.js</a> to load the <span class="caps">JSON</span> file into your JavaScript and use those values there as well.</p>
+<p>Similarly, <a href="https://github.com/vigetlabs">Viget Labs</a> created a simple <span class="caps">JSON</span> importer to <code>@import</code> a <em>.json</em> file directly into your Sass, translating <span class="caps">JSON</span> objects into variables. When Sass 3.3 was released, a new data type called <a href="http://sass-lang.com/documentation/file.SASS_REFERENCE.html#maps">maps</a> was introduced, which has a structure similar to <span class="caps">JSON</span> objects.</p>
+<p>The <a href="https://github.com/vigetlabs/sass-json-vars">Sass <span class="caps">JSON</span> Vars</a> plugin will translate your <span class="caps">JSON</span> object into a Sass <code>map</code> if your version of Sass is high enough, or just standard variables if not. This technique can be useful for any number of other things in addition to responsive breakpoints!</p>
+<h1>Special Sass Peripherals</h1>
+<p>In addition to built-in Sass features, we also use some external libraries to supercharge our code. We&rsquo;ve already mentioned sass-globbing, but one that has made the biggest impact on us is <a href="http://compass-style.org/">Compass</a>. It&rsquo;s popular for its utility mixins that generate verbose code like gradients or remove the need for you to type vendor prefixes, which we often make use of. Compass also has very powerful <a href="http://compass-style.org/help/tutorials/spriting/">sprite generation tools</a> that have made a huge impact on how we create and use sprites on our website.</p>
+<h2>Sprites</h2>
+<p>Behance makes use of many icons throughout the site, and although we recently converted many to use an <a href="http://icomoon.io/">icon font</a>, there are still a large number that come from a sprite sheet. In the past, these sprite sheets were built manually by organizing many small images into one big image by a designer. Then, a developer would closely inspect the image to determine coordinates and dimensions for every image, and then manually type all that information into a <span class="caps">CSS</span> file &hellip; a process very time consuming for everyone involved.</p>
+<figure id="figure-37-7"> <img class="jail" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/r/37-7.png" /><noscript><img src="../r/37-7.png" /></noscript> <figcaption>Our project editor uses a sprite for icons, including the ones seen here, plus additional states of the ones pictured, as well as many additional ones inside editor dialogs.</figcaption> </figure>
+<p>But Compass sprite generation makes the process about a billion times easier. Just drop your individual images into a folder, write a few specific lines of Sass, and Compass will stitch your images together into one sprite file and generate all the <span class="caps">CSS</span> for you: classes, dimensions, coordinates and all. You can even choose to take a more hands-on approach and use Compass&rsquo; sprite helpers for more fine-grained control over how your sprite <span class="caps">CSS</span> is generated.</p>
+<p>In just a few short lines you can make a sprite with <span class="caps">CSS</span> for each icon&rsquo;s class, background position and dimension:</p>
+<pre><code>$icons-layout: horizontal;
+$icons-sprite-dimensions: true;
+
+@import "compass/utilities/sprites/base";
+@import "../images/icons/*.png";
+@include all-icons-sprites;</code></pre>
+<p><span class="initial quote">&ldquo;</span>Magic&rdquo; variables exist to set various options for the sprite. They&rsquo;re called &ldquo;magic&rdquo; because they exist based on the name of the folder holding your individual images, which in this example is <em>/icons</em>. The last three lines of code generate the sprite and <span class="caps">CSS</span> based on a combination of <a href="http://compass-style.org/help/tutorials/spriting/customization-options/">default options</a> and the ones defined above.</p>
+<p>These tools also make it very easy to create and use <a href="http://en.wikipedia.org/wiki/Pixel_density">high pixels-per-inch</a>, or high pixel density, sprites. By separating your 1x and 2x sprites into separate folders and setting the orientation of both sprites to be the same, only a few lines of Sass are needed to define high <span class="caps">PPI</span> sprite:</p>
+<pre><code>$icons: "icons/*.png";
+$icons-2x: "icons-2x/*.png";
+
+$icons-sprite-dimensions: true;
+
+$icons-sprite: sprite-map($icons, $layout: horizontal);
+$icons-2x-sprite: sprite-map($icons-2x, $layout: horizontal);
+
+.icon {
+  background: sprite-url($icons-sprite);
+}
+
+@include pixel-ratio {
+  .icon {
+    background-image: sprite-url($icons-2x-sprite);
+    background-size: image-width(sprite-path($icons-sprite)) image-height(sprite-path($icons-sprite));
+  }
+}</code></pre>
+<p>In this example, our 1x icons are in the folder <em>/icons</em> and the 2x icons are in <em>/icons-2x</em>. We set our 1x sprite as the background image for the <code>.icon</code> class. The <code>pixel-ratio</code> mixin prints out a <code>pixel-ratio</code> media query that overrides the <code>.icon</code> class&rsquo; background with the 2x image. The use of <code>background-size</code> shrinks the 2x image down to the dimensions of the 1x sprite, giving it a higher pixel density.</p>
+<p>As an added bonus, the Photoshop plugin <a href="http://macrabbit.com/slicy/">Slicy</a> quickly exports assets from a single <span class="caps">PSD</span> into individual images, simplfying the initial process of saving images out of mockups too. If you are using the latest version of Photoshop <span class="caps">CC</span>, the built-in <a href="http://helpx.adobe.com/photoshop/using/generate-assets-layers.html">export assets</a> feature can help with this, too.</p>
+<p>Overall, Compass sprite generation has been invaluable in its ease of use and the amount of time it has saved us.</p>
+<h1>Coming Next</h1>
+<p>In <a href="sass-for-big-sites-part-2/index.html">part 2</a>, we&rsquo;ll explore the knowledge sharing aspect of writing Sass for a huge website. We&rsquo;ll go over living style guides, documentation and tools to keep all your developers on the same page and make onboarding new team members to your codebase easy.</p>
+				
+			
+				<section id="extra-mile">
+					<h1>Going the <span>Extra Mile</span></h1>
+				
+					
+						<p><a href="http://compass-style.org/">Compass</a>, aside from being a great resource for useful mixins and functions, is also a meta-framework: a framework for creating frameworks. You can use it to create <a href="http://chriseppstein.github.io/blog/2010/08/01/building-a-personal-framework/">your own custom <span class="caps">CSS</span> framework</a> to make variables, mixins, functions and more reusable across&nbsp;projects.</p>
+				</section>
+			
+				<section id="takeaways">
+				<section id="pitfalls" class="takeaway">
+
+					<h1>Pitfalls to Avoid</h1>
+
+					<ul>
+<li>Don’t use extra tools, frameworks or techniques unless they provide a clear, tangible benefit. They can easily add bloat and unnecessarily complicate your&nbsp;code.</li>
+<li>Avoid using <code>@extend</code> on classes, as the behavior can be unexpected when the extended classes are used throughout your code. Use placeholder selectors&nbsp;instead.</li>
+<li>Don’t hard-code vendor prefixes, use a mixin or other tool to handle them for&nbsp;you.</li>
+<li>Don’t use filename shorthand for importing partials, as this can make it harder to search for all the places that a generically-named partial is being&nbsp;included.</li>
+</ul>
+				</section>
+				<section id="todos" class="takeaway">
+
+					<h1>Things to Do</h1>
+
+					<ul>
+<li>Keep it simple! The more straightforward your code, the easier it is to&nbsp;understand.</li>
+<li>Organize your code in a clear, consistent way that makes it easy to&nbsp;read.</li>
+<li>Familiarize yourself with Sass’ built-in functions. There are tons of them and they can be very&nbsp;useful!</li>
+<li>Use Sass source maps so that your browser’s web inspector shows the line numbers and file locations for the Sass files rather than the compiled <span class="caps">CSS.</span></li>
+</ul>
+				</section>
+				</section>
+			
+
+
+				<section id="further-reading">
+					<h1>Further Reading</h1>
+					<ul>
+	
+		
+						<li class="tool"><a href="http://thesassway.com/">The Sass Way</a>, RIZN Media</li>
+	
+		
+						<li class="tool"><a href="http://hugogiraudel.com">HugoGiraudel.com</a>, Hugo Giraudel</li>
+	
+					</ul>
+				</section>
+			</div>
+			
+		</article>
+									<section id="comments" style="display: none">
+					<header>
+						<h1 class="question">What are some techniques you use to make your Sass&nbsp;scalable?</h1>
+					</header>
+					<a id="comment-loader" data-include-on-tap data-replace="/comments/sass-for-big-sites-part-1/" data-include-size="5" href="sass-for-big-sites-part-1/comments/index.html#comments">View comments on this entry and add your own</a>
+				</section>
+								
+
+		
+		
+		
+	   <ul id="pagination">
+	     <li class="prev"><a href="responsive-discovery/index.html"><em>Previous Entry: </em>Responsive&nbsp;Discovery</a></li>
+	     <li class="next"><a href="sass-for-big-sites-part-2/index.html"><em>Next Entry: </em>Sass for Big Sites, Part&nbsp;2</a></li>
+	   </ul>
+
+		
+		<footer class="sidebar" role="complementary">
+		
+				
+		<section id="author" class="sidebar-item vcard byline">
+			<h1>Your Sherpa</h1>
+	
+	
+		
+		<h2><a class="fn url" href="../about/authors/jackie-balzer/index.html">
+			<img class="photo" src="../i/a/uploads/avatar_2497.jpg" alt=""/>Jackie Balzer</a></h2>
+		<p>Jackie is the Sass-lovin&#8217;, beer-drinkin&#8217; head of front-end development at&nbsp;Behance.</p>
+		<p class="more"><a href="../about/authors/jackie-balzer/index.html">More about Jackie</a></p>
+	
+</section>
+
+			
+			
+		
+			
+				
+
+			<section id="share" class="sidebar-item entry-unrelated">
+
+				<h1>Share</h1>
+
+				<p id="twitter"><a href="https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fwebstandardssherpa.com%2Freviews%2Fsass-for-big-sites-part-1&amp;source=tweetbutton&amp;text=Sass+for+Big+Sites,+Part+1+by+@jackiebackwards&amp;url=http%3A%2F%2Fwebstandardssherpa.com%2Freviews%2Fsass-for-big-sites-part-1&amp;via=StandardsSherpa%20%23wssherpa%20%23sherpa37&amp;related=WaSP:Web%20Standards" title="Tweet"><img src="http://cdn.webstandardssherpa.com/i/button-twitter.png" alt=""/></a> <b class="hashtag"><em>Hashtag:</em> #sherpa37</b></p>
+                <p id="facebook"><a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fwebstandardssherpa.com%2Freviews%2Fsass-for-big-sites-part-1" title="Share on Facebook"><img src="http://cdn.webstandardssherpa.com/i/button-facebook.png" alt=""/></a></p>
+				<p id="linkedin"><a href="https://www.linkedin.com/cws/share?url=http%3A%2F%2Fwebstandardssherpa.com%2Freviews%2Fsass-for-big-sites-part-1&amp;original_referer=http%3A%2F%2Fwebstandardssherpa.com%2Freviews%2Fsass-for-big-sites-part-1" title="Share on LinkedIn"><img src="http://cdn.webstandardssherpa.com/i/button-linkedin.png" alt=""/></a></p>
+				<p id="google_plus"><a href="https://plus.google.com/share?url=http%3A%2F%2Fwebstandardssherpa.com%2Freviews%2Fsass-for-big-sites-part-1" title="Share on Google Plus"><img src="http://cdn.webstandardssherpa.com/i/button-googleplus.png" alt=""/></a></p>
+			</section>
+			
+			
+						<section id="standards-fact" class="sidebar-item entry-unrelated">
+
+				<h1>Standards Fact</h1>
+
+
+				<p>Using proprietary technologies, such as Adobe Flash, on your website can introduce accessibility issues if you don&#8217;t take proactive&nbsp;measures.</p>
+
+			</section>
+
+			
+	<section id="submit-a-site" class="sidebar-item entry-unrelated">
+		<p><a href="../submit-a-site/index.html"><img src="../i/feed-shirley-222x99.png" alt="Submit a site for Review" /></a></p>
+	</section>
+
+
+
+		</footer>
+	
+	  </div>
+  		<form style="display: none" id="search-form" method="post" action="../index.html"  >
+<div class='hiddenFields'>
+<input type="hidden" name="ACT" value="6" />
+<input type="hidden" name="XID" value="7d764b8d274522f1aa10f35622c4fda77524951b" />
+<input type="hidden" name="RES" value="10" />
+<input type="hidden" name="meta" value="vJed+IEhaFn3W7jNVVY8C6VK4KKB0doGerxtt+3TXJkJkrK5M3OFhLNfv7UrH+uJhVYy/SM2Y8CEBzxS9ZAY+5Ry234MoWdF0KwpptDKKX/rJJg1NP4Y7SntDPwMKWd0mrV/+nbWgdpLXyGAXHtWDd/W8QMHWePL8qfhqCpJzaK4pU2LxFEhOj26ZDN4P+8d8hXffYqEVMiMRDrkUYAlZAa+r08a/igafmWKpfXqcmFAHWq/qsh+zoaTz9V6wiUJl2MMAdfHTEZ76nZbWvE5NUZpcvtxRexke8gSzhsFUK46dJJ8pJfmOvPccKB8bfwmBU4cgAZ668OleVhPUZRHiYhGfX21C2DodUFydLdhuEPR2Upj1jdw5RfdVF8nWXwA5G5T4DRd4xKMtKvVvr1BpJKZ37Gid+DBZjiqIcAhYCY=" />
+<input type="hidden" name="site_id" value="1" />
+</div>
+
+
+		<p role="search">
+			<label for="query">Looking for something?</label>
+			<input type="search" name="keywords" id="query" value=""/>
+			<button type="submit">Search</button>
+		</p>
+	</form>
+
+    	<nav id="nav-account" style="display: none" role="navigation">
+		<ul class="buttons">
+	
+			<li><a href="../sign-up/index.html" style="display: none">Sign up</a></li>
+	
+	
+			<li><a href="../log-in/index.html" style="display: none">Log in</a></li>
+	
+		</ul>
+	</nav>
+  <footer role="contentinfo" id="page-footer">
+	<div id="site-info">
+			<div id="elevator-pitch" class="footer-item">
+
+		<p>Web Standards Sherpa&rsquo;s experts provide helpful, pragmatic and up-to-date advice on best practices for web professionals everywhere.</p>
+<ul class="more">
+<li><a href="../about/index.html">More about us</a></li>
+<li><a href="../contact/index.html" style="display: none">Contact us</a></li>
+</ul>
+
+	</div>
+			<nav id="nav-complete" role="navigation">
+		<section class="participate" style="display: none">
+			<h1>Participate</h1>
+			<ul>
+				<li><a href="../submit-a-site/index.html">Submit a site</a></li>
+				<li><a href="../submit-a-question/index.html">Submit a question</a></li>
+				<li><a href="../sign-up/index.html" style="display: none">Sign up</a><a href="../log-in/index.html" style="display: none">Log in</a></li>
+				
+			</ul>
+		</section>
+		<section class="learn">
+			<h1>Learn</h1>
+			<ul>
+				<li><mark><a href="index.html">Reviews</a></mark></li>
+				<li><a href="../ask-the-sherpas/index.html">Ask Sherpas</a></li>
+				<li><a href="../about/authors/index.html">Authors</a></li>
+				<li><a href="../glossary/index.html">Glossary</a></li>
+				
+			</ul>
+		</section>
+	</nav>
+
+			<section id="sponsors" class="footer-item">
+
+		<h1>We thank our sponsors</h1>
+
+				<ol class="partners">					<li>
+											<a href="http://www.microsoft.com"><img src="../i/p/microsoft-mono.png" alt="Microsoft"/></a>
+										</li>
+				
+									<li>
+											<a href="http://mailchimp.com"><img src="../i/p/mc-mono.png" alt="MailChimp"/></a>
+										</li>
+				
+									<li>
+											<a href="http://developer.mozilla.org"><img src="../i/p/mozilla-mono.png" alt="Mozilla"/></a>
+										</li>
+				
+									<li>
+											<a href="http://mediatemple.net"><img src="../i/p/mt-mono.png" alt="Media Temple"/></a>
+										</li>
+				</ol>
+
+	</section>
+	</div>
+	<div id="terms" class="source-org vcard">
+		<p id="ownership"><a xmlns:dct="http://purl.org/dc/terms/" href="../index.html" property="dct:title" rel="cc:attributionURL">Web Standards Sherpa</a> is an outreach effort by the <a class="org fn url" xmlns:cc="http://creativecommons.org/ns#" href="http://webstandards.org" property="cc:attributionName">Web Standards Project (WaSP)<img src="../i/WaSP-logo-mono.png" alt="" /></a>.</p>
+<!--		<p id="network">This site is a proud member of the <a rel="license" href="http://network.smashingmagazine.com/">Smashing Network<img src="/i/p/smashing-mono.png" alt="" /></a>.</p> -->
+		<p id="license">The content of this site is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons<img src="../i/license.png" alt="" /></a>.</p>
+	</div>
+	
+  </footer>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+	<script>window.jQuery || document.write("<script src='../j/jquery.js'>\x3C/script>")</script>
+	<script src="../j/main.js"></script>
+	
+					<script>(function(e,t){var n=t(jQuery),r=typeof define=="function"&&define.amd;r?define(e,["jquery"],n):(this.jQuery||this.$||this)[e]=n})("jail",function(e){function s(e,n){var r=!1;!n||(r=n.data("triggerElem")),!!r&&typeof r.on=="function"&&(r.on(e.event+"."+e.id,{options:e,images:n},u),t.on("resize."+e.id,{options:e,images:n},u))}function o(e){var t=0;if(e.length===0)return;for(;;){if(t===e.length)break;e[t].getAttribute("data-src")?t++:e.splice(t,1)}}function u(n){var i=n.data.images,u=n.data.options;i.data("poller",setTimeout(function(){r=e.extend({},i),o(r),e(r).each(function(){if(this===window)return;f(u,this,r)});if(a(r)){e(n.currentTarget).unbind(n.type+"."+u.id);return}if(u.event!=="scroll"){var l=/scroll/i.test(u.event)?i.data("triggerElem"):t;u.event="scroll",i.data("triggerElem",l),s(u,e(r))}},u.timeout))}function a(t){var n=!0;return e(t).each(function(){!e(this).attr("data-src")||(n=!1)}),n}function f(n,r,i){var s=e(r),o=/scroll/i.test(n.event)?i.data("triggerElem"):t,u=!0;n.loadHiddenImages||(u=h(s,o,n)&&s.is(":visible")),u&&l(o,s,n.offset)&&c(n,s)}function l(e,t,n){var r=e[0]===window,i=r?{top:0,left:0}:e.offset(),s=i.top+(r?e.scrollTop():0),o=i.left+(r?e.scrollLeft():0),u=o+e.width(),a=s+e.height(),f=t.offset(),l=t.width(),c=t.height();return s-n<=f.top+c&&a+n>=f.top&&o-n<=f.left+l&&u+n>=f.left}function c(t,n){var s=new Image;s.onload=function(){n.hide().attr("src",s.src),n.removeAttr("data-src"),t.effect?(t.speed?n[t.effect](t.speed):n[t.effect](),n.css("opacity",1),n.show()):n.show(),o(r),!t.callbackAfterEachImage||t.callbackAfterEachImage.call(this,n,t),a(r)&&!!t.callback&&!i&&(t.callback.call(e.jail,t),i=!0)},s.src=n.attr("data-src")}function h(n,i,o){var u=n.parent(),a=!0;while(u.length&&u.get(0).nodeName.toUpperCase()!=="BODY"){if(u.css("overflow")==="hidden"){if(!l(u,n,o.offset)){a=!1;break}}else if(u.css("overflow")==="scroll"&&!l(u,n,o.offset)){a=!1,e(r).data("triggerElem",u),o.event="scroll",s(o,e(r));break}if(u.css("visibility")==="hidden"||n.css("visibility")==="hidden"){a=!1;break}if(i!==t&&u===i)break;u=u.parent()}return a}var t=e(window),n={id:"jail",timeout:1,effect:!1,speed:400,triggerElement:null,offset:0,event:"load",callback:null,callbackAfterEachImage:null,placeholder:!1,loadHiddenImages:!1},r=[],i=!1;return e.jail=function(t,r){var i=t||{},s=e.extend({},n,r);e.jail.prototype.init(i,s),/^(load|scroll)/.test(s.event)?e.jail.prototype.later.call(i,s):e.jail.prototype.onEvent.call(i,s)},e.jail.prototype.init=function(n,r){n.data("triggerElem",r.triggerElement?e(r.triggerElement):t),!r.placeholder||n.each(function(){e(this).attr("src",r.placeholder)})},e.jail.prototype.onEvent=function(t){var n=this;t.triggerElement?s(t,n):n.on(t.event+"."+t.id,{options:t,images:n},function(t){var n=e(this),i=t.data.options,s=t.data.images;r=e.extend({},s),c(i,n),e(t.currentTarget).unbind(t.type+"."+i.id)})},e.jail.prototype.later=function(t){var n=this;setTimeout(function(){r=e.extend({},n),n.each(function(){f(t,this,n)}),t.event="scroll",s(t,n)},t.timeout)},e.fn.jail=function(t){return new e.jail(this,t),r=[],this},e.jail});
+
+(function($){$("img.jail").jail({offset:100});}(jQuery));</script>
+				
+			
+		
+	
+
+	<!-- Just to see if this works -->
+	<!--[if lte IE 6]><script src="/j/ie6.js"></script><![endif]-->
+
+
+			<script type="text/javascript">
+			  var rpxJsHost = (("https:" == document.location.protocol) ? "https://" : "http://static.");
+			  document.write(unescape("%3Cscript src='" + rpxJsHost + "rpxnow.com/js/lib/rpx.js' type='text/javascript'%3E%3C/script%3E"));
+			</script>
+
+			<script type="text/javascript">
+				RPXNOW.overlay = true;
+		  		RPXNOW.language_preference = "en";
+			  	RPXNOW.init({appId: 'cdnifhbomckchfhfgbpl', xdReceiver: '/rpx_xdcomm.html'});
+			</script>
+
+	<div id="ClickTaleDiv" style="display: none;"></div>
+	<script type="text/javascript">
+		if ( document.location.protocol!='https:' )
+		{
+			$.getScript('http://s.clicktale.net/WRb6.js',function(){
+				if ( typeof ClickTale=='function' )
+				{ClickTale(16473,0.1,"www02");}
+			});
+		}
+	</script>
+</body>
+</html>
+

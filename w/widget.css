@@ -1,0 +1,96 @@
+.sherpa-widget-content ul {
+	margin:0;
+	padding:0;
+}
+.sherpa-widget-content li {
+	border-top:1px solid rgb(215, 206, 190);
+	list-style-type: none;
+	margin:0;
+	padding:1em 0 1.5em;
+}
+	.sherpa-widget-content li:first-child {
+		border:0;
+		padding-top: 0;
+	}
+.sherpa-widget-content {
+	background:#ede4d3 url(http://webstandardssherpa.com/w/img/mountains.png) repeat-x left top;
+	font-family: Clarendon, Georgia, Times, 'Times New Roman', serif;
+	padding:35px 22px 0;
+	position: relative;
+	-moz-border-radius:0 0 8px 8px;
+	-webkit-border-radius:0 0 8px 8px;
+	border-radius:0 0 8px 8px;
+	z-index:2;
+}
+.sherpa-widget-content .issue {
+	background: url(/c/i/wood.png) center left;
+	color: rgb(250, 198, 117);
+	font-size: .875em;
+	-moz-border-radius: 6px;
+	-o-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	display: inline-block;
+	font-style: normal;
+	font-weight: bold;
+	line-height: 1.429;
+/*	margin-right:.5em; */
+/*	margin-left: -1em; */
+	margin-bottom:.25em;
+	padding: .0714em 1.429em .0714em .571em;
+	position: relative;
+	text-decoration: none;
+	text-shadow: 0 -1px 1px rgba(0,0,0,0.73);
+/*	transform:rotate(-8deg);
+	-ms-transform:rotate(-8deg);
+	-webkit-transform:rotate(-8deg); */
+	top:.25em;
+	width: 3.5em;
+}
+.sherpa-widget-content .author{
+	color: rgb(61, 105, 112);
+	margin:0;
+}
+.sherpa-widget-content .issue i {
+	background: url(http://webstandardssherpa.com/w/img/arrow-head-2.png) right center;
+	text-indent: -999em;
+	width: 1.429em;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	top: 0;
+}
+.sherpa-widget-content .author strong {
+	color: rgb(93, 42, 7);
+	font-weight: normal;
+}
+.sherpa-widget-content .title {
+	margin:0 0 .25em;
+}
+.sherpa-widget-content .title a {
+	font-size: 18px;
+	text-decoration: none;
+	color: rgb(61, 105, 112);
+}
+.sherpa-widget-content + footer {
+	background-color: rgb(199, 100, 36);
+	background: rgb(199, 100, 36) -moz-linear-gradient(top, rgb(234, 139, 74), rgb(200, 100, 37));
+	background: rgb(199, 100, 36) -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(234, 139, 74)), to(rgb(200, 100, 37)));
+	background: rgb(199, 100, 36) -webkit-linear-gradient(top, rgb(234, 139, 74), rgb(200, 100, 37));
+	background: rgb(199, 100, 36) linear-gradient(top, rgb(234, 139, 74), rgb(200, 100, 37));
+	font-family: "Gill Sans", "Trebuchet MS", Calibri, sans-serif;
+	position: relative;
+	padding-top: 8px;
+	margin-top:-5px;
+	text-align: center;
+	z-index:1;
+}
+.sherpa-widget-content + footer a {
+	color: #fff;
+	letter-spacing: 2px;
+	line-height: 1.25;
+	height:1.5em;
+	margin: 0;
+	text-decoration: none;
+	text-transform: uppercase;
+}

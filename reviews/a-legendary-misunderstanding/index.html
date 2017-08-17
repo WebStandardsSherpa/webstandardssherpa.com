@@ -1,0 +1,496 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" id="webstandardssherpa_com">
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Language" content="en"/>
+	
+
+	<title>A Legendary Misunderstanding - Web Standards Sherpa</title>
+	<meta name="robots" content="index,follow,archive" />
+	 <link rel="canonical_url" href="index.html" /> 
+	<meta name='description' content='Aaron unearths code consistency issues at American Express, and shows how we can use fieldset and legend more effectively in the markup of web forms.' />
+	<meta name='DC.description' content='Aaron unearths code consistency issues at American Express, and shows how we can use fieldset and legend more effectively in the markup of web forms.' />
+	<meta name='keywords' content='Accessibility,Semantics,Usability' />
+	<meta name='DC.subject' content='Accessibility,Semantics,Usability' />
+
+	<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
+	<link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
+	<meta name="DC.title" content="A Legendary Misunderstanding - Web Standards Sherpa" />
+	<meta name="DC.creator" content="Aaron Gustafson" />
+	<meta name="DC.publisher" content="The Web Standards Project" />
+	<meta name="DC.date.created" scheme="DCTERMS.W3CDTF" content="2015-12-07T14:45:25-05:00" />
+	<meta name="DC.date.modified" scheme="DCTERMS.W3CDTF" content="1453-05-14T20:00:00-05:00" />
+	<meta name="DC.date.valid" scheme="DCTERMS.W3CDTF" content="2015-12-13T16:45:25-05:00" />
+	<meta name="DC.type" scheme="DCTERMS.DCMIType" content="Text" />
+	<meta name="DC.rights" scheme="DCTERMS.URI" content="(cc) Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License">
+	<meta name="Copyright" content="(cc) Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License"/>
+	<meta name="DC.format" content="text/html" />
+	<meta name="DC.identifier" scheme="DCTERMS.URI" content="http://webstandardssherpa.com/reviews/a-legendary-misunderstanding/" />
+	<meta name="MSSmartTagsPreventParsing" content="true"/>
+	<meta name="Rating" content="General"/>
+
+	<meta property="og:title" content="A Legendary Misunderstanding"/> 
+	<meta property="og:type" content="article"/> 
+	<meta property="og:url" content="http://webstandardssherpa.com/reviews/a-legendary-misunderstanding/"/> 
+	<meta property="og:image" content="http://webstandardssherpa.com/i/fb-backpack.png"/> 
+	<meta property="og:site_name" content="Web Standards Sherpa"/> 
+	<meta property="og:description" content="Aaron unearths code consistency issues at American Express, and shows how we can use fieldset and legend more effectively in the markup of web forms."/>
+	<meta property="fb:admins" content="100002108202285"/> 
+	
+	<!-- Twitter -->
+	<meta name="twitter:card" value="summary"/>
+	<meta name="twitter:site" value="@StandardsSherpa"/>
+	<meta name="twitter:creator" value="@AaronGustafson"/>
+
+	
+
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="home" href="../../index.html"/>
+	<link rel="copyright" href="index.html#license"/>
+	<link rel="shortcut icon" type="image/png" href="../../favicon.png"/>
+	<link rel="author" type="text/plain" href="../../humans.txt.html"/>
+
+	<!--[if lte IE 8]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<!--[if (lte IE 8)&(!IEMobile)]>
+    <link rel="stylesheet" href="/c/old-ie.css" media="screen">
+	<![endif]-->
+	<!--[if gt IE 8]><!-->
+		<link rel="stylesheet" type="text/css" href="../../c/main.css" media="screen"/>
+	<!--<![endif]-->
+	<!--[if IEMobile 7]>
+		<link rel="stylesheet" href="/c/main.css" media="screen">
+		<link rel="stylesheet" href="/c/windows7-mobile.css" media="screen">
+	<![endif]-->
+	
+	<link rel="alternate" type="application/rss+xml" title="Web Standards Sherpa Reviews (Summary)" href="http://feeds.feedburner.com/Web-Standards-Sherpa-Reviews-Summary"/>
+	<link rel="alternate" type="application/rss+xml" title="Web Standards Sherpa Reviews (Full Text)" href="http://feeds.feedburner.com/Web-Standards-Sherpa-Reviews"/>
+	<link rel="alternate" type="application/rss+xml" title="Web Standards Sherpa Discussions" href="http://feeds.feedburner.com/Web-Standards-Sherpa-Discussions"/>
+
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-176472-9']);
+		_gaq.push(['_trackPageview']);
+		(function() {
+		  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+	<script type="text/javascript">
+		var WRInitTime=(new Date()).getTime();
+	</script>
+</head>
+<body id="review">
+
+
+	<header role="banner" id="page-header">
+		<h4 id="logo"><a href="../../index.html" title="Return to the homepage">Web Standards Sherpa</a></h4>
+	</header>
+
+
+		<nav id="nav-primary" role="navigation">
+		<ul><li id="nav-home"><a href="../../index.html">Home</a></li><li id="nav-reviews"><mark><a href="../index.html">Reviews</a></mark></li><li id="nav-ask-the-sherpas"><a href="../../ask-the-sherpas/index.html">Ask the Sherpas</a></li>		</ul>
+
+		
+	</nav>
+
+	
+
+	<div id="content">
+
+
+		<article class="hentry">
+			<header>
+				<h1 class="entry-title">A Legendary Misunderstanding</h1>
+				<ul class="meta">
+	
+					<li class="author">by
+						<a href="../../about/authors/aaron-gustafson/index.html">Aaron Gustafson</a>
+					</li>
+					<li class="issue"><i>Issue </i><abbr title="Number">No.</abbr> 6</li>
+					<li class="published"><time datetime="2011-03-31T12:34:11" pubdate="pubdate">31 March 2011</time></li>
+					<li class="categories">
+						<ul>
+	
+							<li><a rel="tag" href="../by-topic/accessibility/index.html">Accessibility</a></li>
+	
+							<li><a rel="tag" href="../by-topic/semantics/index.html">Semantics</a></li>
+	
+							<li><a rel="tag" href="../by-topic/usability/index.html">Usability</a></li>
+	
+						</ul>
+					</li>
+				</ul>
+				
+<div id="readspeaker_button1" class="rs_skip rsbtn rs_preserve">
+    <a class="rsbtn_play" accesskey="L" title="Listen to this page using ReadSpeaker" href="http://app.na.readspeaker.com/cgi-bin/rsent?customerid=6758&amp;lang=en_us&amp;readid=content&amp;url=http%3A%2F%2Fwebstandardssherpa.com%2Freviews%2Fa-legendary-misunderstanding%2F">
+        <span class="rsbtn_left rsimg rspart"><span class="rsbtn_text"><span>Listen</span></span></span>
+        <span class="rsbtn_right rsimg rsplay rspart"></span>
+    </a>
+</div>
+
+			</header>
+			
+			<div class="entry-content">
+				<figure id="figure-1"><img class="jail" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="http://cdn.webstandardssherpa.com/r/6-1.png" alt=""/><noscript><img src="http://cdn.webstandardssherpa.com/r/6-1.png" alt=""/></noscript></figure>
+<p>A few months ago, I logged out of my account the American Express website before remembering another task I needed to do, so I clicked the &ldquo;Log Back In&rdquo; button they so conveniently displayed. Strangely, <a href="https://online.americanexpress.com/myca/acctsumm/us/action?request_type=authreg_acctAccountSummary&amp;Face=en_US">the login form I was presented</a> didn&rsquo;t look the same as the one I was used to seeing on <a href="https://home.americanexpress.com/home/mt_personal_cm.shtml">the American Express homepage</a>. This new form had some strange black squiggles above each field.</p>
+<figure id="figure-2"> <img class="jail" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="http://cdn.webstandardssherpa.com/r/6-2.png" alt=""/><noscript><img src="http://cdn.webstandardssherpa.com/r/6-2.png" alt=""/></noscript> <figcaption>The login form found on americanexpress.com compared with the one encountered after logging out. Black squiggles appear above each field in the second form if you are a Safari user.</figcaption> </figure>
+<p><em>What the heck are those squiggles?</em> I wondered. A <kbd>Control</kbd>-click later, I had <a href="http://www.apple.com/safari/features.html#developer">inspected</a> one of the squiggles and discovered that it was actually tiny text, the contents of a not-quite-hidden <code>legend</code> element. I wasn&rsquo;t surprised with my discovery, after all, most accessibility-aware coders have been using <code>legend</code>s (and their necessary parent <code>fieldset</code>s) to organize form controls for years. What was different about this implementation was that every field in the form was wrapped in its own <code>fieldset</code> with its own <code>legend</code>. And, as if that wasn&rsquo;t bizarre enough, each <code>legend</code> contained the same text: &ldquo;Log In to American Express Online Services&rdquo;.</p>
+<p>Normally, I applaud the use of rich semantics like <code>legend</code> and <code>fieldset</code> as they provide excellent means by which to organize complex forms. But looking at this form, I surmised that the author knew enough to understand the importance of these elements, but wasn&rsquo;t really sure how to go about implementing them. It&rsquo;s the classic well-meaning but misguided markup trap we&rsquo;ve all fallen into at one time or another. Either that, or American Express&rsquo; <span class="caps">CMS</span> was suffering from some form of markup-based Tourette&rsquo;s.</p>
+<h2>Getting organized</h2>
+<p>Before we dive into alternative markup approaches, let&rsquo;s take a quick look at the <span class="caps">HTML</span> behind this form. Here&rsquo;s a brief excerpt:</p>
+<pre class="html"><code>&lt;div&gt;&lt;font class="smalltext"&gt;&lt;strong&gt;User ID&lt;/strong&gt;&lt;/font&gt;&lt;/div&gt;
+&lt;div&gt;
+  &lt;fieldset class="fieldSetStyle"&gt;
+    &lt;legend class="hideLegend hideLegendIE7"&gt;Log In to American Express Online Services&lt;/legend&gt;
+    &lt;input maxlength="32" name="UserID" size="20" title="Enter the User Id" value="" onchange="uncheckRememberMe()" height="1"&gt;
+  &lt;/fieldset&gt;
+&lt;/div&gt;
+&lt;div&gt;
+  &lt;fieldset class="fieldSetStyle"&gt;
+    &lt;legend class="hideLegend hideLegendIE7"&gt;Log In to American Express Online Services&lt;/legend&gt;
+    &lt;input title="Remember My User ID" name="REMEMBERME"  type="checkbox" class="checkBox" checked&gt;
+    &lt;font class="smalltext"&gt;&lt;strong&gt;Remember Me&lt;/strong&gt;&lt;/font&gt;
+  &lt;/fieldset&gt;
+&lt;/div&gt;</code></pre>
+<p>Yeah, I know, the author is using a <code>font</code> element, but let&rsquo;s table that discussion as I want to focus on <code>fieldset</code> and <code>legend</code>.</p>
+<p>Despite looking quite similar, the version of the login form that appears on the American Express homepage uses no <code>fieldset</code>s at all and, apart from the names used for each of the form fields, bears little resemblance to the over-<code>fieldset</code>-ed form. Here&rsquo;s a brief excerpt of these same fields in that form:</p>
+<pre class="html"><code>&lt;div class="labelsfont "&gt;&lt;strong&gt;User ID&lt;/strong&gt;&lt;/div&gt;
+&lt;!-- skipping some hidden fields --&gt;
+&lt;input tabindex="41" class="txtSize" type="text" id="UserID" title="This is the User ID text field where you enter your User ID to login" name="UserID" size="20" onkeypress="return submitenter(this,event)"/&gt;
+&lt;div&gt;
+  &lt;input tabindex="51" type="checkbox" title="Check this box to have the American Express website securely remember and store your User ID on the computer you are currently using" name="REMEMBERME" onclick="javascript:RmbrChkBox();"/&gt;
+  &lt;span class="blkcolorClass "&gt;Remember Me&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+<p>The differences between the two forms lead me to believe the forms were either built by two separate departments or built at two very different times by the same department. The fact that one is written as <span class="caps">HTML</span> and the other is serialized as <span class="caps">XHTML</span> only reinforces that hypothesis. The inconsistencies between the two are problematic for many reasons, but I&rsquo;ll get to that discussion <a href="index.html#extra-mile">in a moment</a>.</p>
+<p>Obviously, this form is much more condensed, but it suffers from similarly poor markup practices. However, before we jump in and start refactoring the markup of these two forms, let&rsquo;s quickly review the <dfn lang="fr" title="reason for existence">raison d&rsquo;&ecirc;tre</dfn> of <code>fieldset</code> and <code>legend</code> elements:</p>
+<blockquote cite="http://www.w3.org/TR/html401/interact/forms.html#h-17.10">
+<p>The <code>FIELDSET</code> element allows authors to group thematically related controls and labels. Grouping controls makes it easier for users to understand their purpose while simultaneously facilitating tabbing navigation for visual user agents and speech navigation for speech-oriented user agents. The proper use of this element makes documents more accessible.</p>
+<p>The <code>LEGEND</code> element allows authors to assign a caption to a <code>FIELDSET</code>. The legend improves accessibility when the <code>FIELDSET</code> is rendered non-visually.</p>
+</blockquote>
+<p>Looking at the markup of the <code>fieldset</code>-ed form, I think the author was on the right track, just a bit overzealous. If we took his <code>fieldset</code> and <code>legend</code> and, instead of using it to wrap the individual fields, used it to wrap the contents of the form as a whole, I think that&rsquo;d be a win for everyone:</p>
+<pre class="html"><code>&lt;fieldset class="fieldSetStyle"&gt;
+  &lt;legend class="hideLegend hideLegendIE7"&gt;Log In to American Express Online Services&lt;/legend&gt;
+  &lt;!-- form contents will go here --&gt;
+&lt;/fieldset&gt;</code></pre>
+<p>Of course some might argue, <a href="index.html#alternate-view">as Derek does</a>, that this form is a too basic for a <code>fieldset</code> and <code>legend</code> to be all that helpful, despite being semantically correct. It&rsquo;s a matter of preference, but if you decide to use the <code>fieldset</code>/<code>legend</code> construct, I would suggest a shorter <code>legend</code>; perhaps, simply, &ldquo;Log In.<span class="final quote">&rdquo;</span></p>
+<p>With the <code>fieldset</code> wrapper in place, the individual form controls and other associated content can be flowed in. Personally, my preference is to use an ordered list (<code>ol</code>) to contain each form control in a collection of several (as we see in this login form), but if you have a penchant for <code>p</code> or <code>div</code> elements, that&rsquo;s cool too; as long as your content is organized and makes sense both visually and aurally, the choice is yours:</p>
+<pre class="html"><code>&lt;fieldset class=&ldquo;fieldSetStyle&rdquo;&gt;
+  &lt;legend class="hideLegend hideLegendIE7"&gt;Log In to American Express Online Services&lt;/legend&gt;
+<mark>  &lt;ol&gt;
+    &lt;li&gt;</mark>
+      &lt;font class="smalltext"&gt;&lt;strong&gt;User ID&lt;/strong&gt;&lt;/font&gt;
+      &lt;input maxlength="32" name="UserID" size="20" title="Enter the User Id" value="" onchange="uncheckRememberMe()" height="1"&gt;
+<mark>    &lt;/li&gt;
+    &lt;li&gt;</mark>
+      &lt;input title="Remember My User ID" name="REMEMBERME"  type="checkbox" class="checkBox" checked&gt;
+      &lt;font class="smalltext"&gt;&lt;strong&gt;Remember Me&lt;/strong&gt;&lt;/font&gt;
+<mark>    &lt;/li&gt;</mark>
+    &lt;!-- more form content goes here --&gt;
+<mark>  &lt;/ol&gt;</mark>
+&lt;/fieldset&gt;</code></pre>
+<h2>To <code>label</code> or not to <code>label</code></h2>
+<p>If you&rsquo;re like me, another aspect of the markup that isn&rsquo;t sitting quite right with you is the lack of <code>label</code> elements surrounding the visual labels for the form (e.g. &ldquo;User <span class="caps">ID</span>&rdquo;). Surely the <code>label</code> element is more meaningful than <code>font</code> and <code>strong</code>? Of course it is, but it&rsquo;s worth explaining the approach the authors are using here: they have opted to use <code>title</code> attributes on the form controls rather than <code>label</code> elements. As you probably know, the <code>title</code> attribute provides advisory information about the element it is applied to, which certainly makes it a valid choice for form controls.</p>
+<p>When a screen reader encounters a form control, it looks to see if the document contains a <code>label</code> associated with that control. If it finds one, the contents of that <code>label</code> are read aloud; if it does not find one, it will look to see if the control has a <code>title</code> attribute. If it finds a <code>title</code>, that text is read aloud in lieu of a <code>label</code>. This may very well be the reason the author of these forms chose <strong>not</strong> to use <code>label</code> elements.</p>
+<p>It&rsquo;s certainly a valid method that lines up with <a href="http://www.w3.org/TR/WCAG-TECHS/H44.html">the recommendations of <span class="caps">WCAG</span>2</a>, but, from my perspective, the <code>label</code> element would be preferable because <code>label</code>s benefit both sighted and non-sighted users alike. They are not only visible and clickable by sighted users, but are made available to non-sighted users when the related form control is focused. The <code>title</code> attribute, in contrast, is only exposed to sighted users as a tooltip when the form control is moused over, meaning that if you want to ensure a sighted user can read that content, you have to include it via a secondary method&mdash;as the authors of this form have within the <code>font &gt; strong</code> combo. That sort of redundancy doesn&rsquo;t sit well with me because I don&rsquo;t feel that &ldquo;Enter the User Id&rdquo; (the contents of the <code>title</code> attribute) provides any more context to non-sighted users than &ldquo;User <span class="caps">ID</span>&rdquo; would if it were a <code>label</code>. For that reason, I&rsquo;d simplify the markup and drop the <code>title</code> attributes:</p>
+<pre class="html"><code>&lt;fieldset class="fieldSetStyle"&gt;
+  &lt;legend class="hideLegend hideLegendIE7"&gt;Log In to American Express Online Services&lt;/legend&gt;
+  &lt;ol&gt;
+    &lt;li&gt;
+<mark>      &lt;label class="smalltext" for="UserID"&gt;User ID&lt;/label&gt;
+      &lt;input maxlength="32" id="UserID" name="UserID" size="20" value="" onchange="uncheckRememberMe()" height="1"&gt;</mark>
+    &lt;/li&gt;
+    &lt;li&gt;
+<mark>      &lt;label class="smalltext"&gt;
+        &lt;input name="REMEMBERME"  type="checkbox" class="checkBox" checked&gt;</mark>
+        Remember Me
+<mark>      &lt;/label&gt;</mark>
+    &lt;/li&gt;
+    &lt;!-- more form content goes here --&gt;
+  &lt;/ol&gt;
+&lt;/fieldset&gt;</code></pre>
+<p>As you can see, each form control has its own <code>label</code> element. In the case of the &ldquo;User <span class="caps">ID</span>&rdquo; field, the <code>label</code> is <em>explicitly</em> associated with the form control using the <code>for</code> attribute (which references the <code>id</code> of the associated form control). In the case of the &ldquo;Remember Me&rdquo; checkbox, the <code>label</code> is <em>implicitly</em> associated because it contains that <code>input</code>, demonstrating the alternate method of <code>label</code>-control association. It&rsquo;s worth noting that explicit association is generally preferred if you need to support legacy browsers like <span class="caps">IE</span>6, but you can always assign the <code>for</code> attribute to a <code>label</code> that is using implicit association as a back-up.</p>
+				
+			
+				<section id="extra-mile">
+					<h1>Going the <span>Extra Mile</span></h1>
+				
+					
+						<p>In a large enterprise like American Express, I can&rsquo;t say I&rsquo;m surprised to find two different login forms using entirely different markup and style rules, but that doesn&rsquo;t mean it&rsquo;s a good thing. Consistency is important and offers clear benefits in terms of maintainability, usability, and&nbsp;security.</p>
+<p>On the development side of things, no one likes having to maintain the two separate sets of markup. And it&rsquo;s never that simple either; with different markup comes different style rules and, generally, different JavaScript. When something has to change, it requires updates in multiple locations. Not only is that inefficient, it makes it more likely the interfaces will diverge even further and provides even more opportunities for bugs to creep into the system. Unifying your codebase makes maintenance far&nbsp;easier.</p>
+<p>From a user&rsquo;s perspective, encountering two or more treatments of the same form or interface can be jarring. And when you are dealing with something as important as a person&rsquo;s finances, it is even more crucial that they feel comfortable and confident that their personal information is secure. Inconsistencies in something as critical as a login form undermine that, making users uneasy or even suspicious that one of the versions might be part of a phishing&nbsp;scheme.</p>
+<p>By refactoring the markup and bringing these two login forms (and any others) in line with one another, American Express would reduce their maintenance overhead, increase users&rsquo; confidence in their brand, and make users feel more secure using their service. That&rsquo;s a lot of &ldquo;bang&rdquo; for very little &ldquo;buck.<span class="final quote">&rdquo;</span></p>
+				</section>
+			
+				<section id="takeaways">
+				<section id="pitfalls" class="takeaway">
+
+					<h1>Pitfalls to Avoid</h1>
+
+					<ul>
+<li>Avoid using an <span class="caps">HTML</span> element when you aren&#8217;t clear on its&nbsp;purpose.</li>
+<li>Don’t make two elements or attributes do the work one could do (as seen in the <code>label</code> element vs. <code>title</code> attribute&nbsp;example).</li>
+<li>Don’t repeat yourself by creating more than one codebase (<span class="caps">HTML</span>, <span class="caps">CSS</span>, etc.) for a reusable component (such as a login&nbsp;form).</li>
+</ul>
+				</section>
+				<section id="todos" class="takeaway">
+
+					<h1>Things to Do</h1>
+
+					<ul>
+<li>Provide clear labels for your form&nbsp;controls.</li>
+<li>Use <code>fieldset</code> and <code>legend</code> to group related form&nbsp;controls.</li>
+<li>Keep reused and often-accessed components consistent in look and&nbsp;feel.</li>
+</ul>
+				</section>
+				</section>
+			
+
+	
+				<section id="alternate-view">
+					<h1>Alternate&nbsp;View</h1>
+					<p class="meta">by <a href="../../about/authors/derek-featherstone/index.html">Derek&nbsp;Featherstone</a></p>
+					
+						<p>A perfect use for <code>legend</code> and <code>fieldset</code> is when users are asked to provide both a shipping and a billing address for an online purchase. The <code>fieldset</code> and <code>legend</code> for &ldquo;Shipping Address&rdquo; and &ldquo;Billing Address&rdquo; will help to disambiguate between two identically labeled &ldquo;City&rdquo; or &ldquo;Postal/Zip Code&rdquo;&nbsp;fields.</p>
+<p>How would this work with assistive technology such as a screen reader? It depends on the screen reader and its settings, but by default, the <span class="caps">JAWS</span> screen reader will read out the text of the <code>legend</code> before it reads out the name of the field that takes the&nbsp;focus.</p>
+<p>What does this mean for the much simpler login&nbsp;form?</p>
+<pre class="html"><code>&lt;fieldset&gt;
+  &lt;legend&gt;Log In to American Express Online Services&lt;/legend&gt;
+  &lt;label for="UserID"&gt;User ID&lt;/label&gt;
+  &lt;input id="UserID" name="UserID"&gt;
+  &lt;label for="pass"&gt;Password&lt;/label&gt;
+  &lt;input type=&rdquo;password&rdquo; id="pass" name="pass"&gt;
+&lt;/fieldset&gt;</code></pre>
+<p>When the user tabs into the User <span class="caps">ID</span> field with <span class="caps">JAWS</span> active, they will hear something like: &ldquo;Log In to American Express Online Services, User <span class="caps">ID</span>, type in text<span class="final quote">&rdquo;</span></p>
+<p>And when they tab into the password field, they will hear: &ldquo;Log in to American Express Online Services, Password, password, type in text<span class="final quote">&rdquo;</span></p>
+<p>And if there were another field? It would read the contents of the <code>legend</code> before that <code>label</code>&nbsp;too.</p>
+<p>For most simple forms, it&rsquo;s likely that you don&rsquo;t need a <code>fieldset</code> and <code>legend</code> even though they are semantically correct. In this case, a particularly wordy <code>legend</code> makes it downright unwieldy; for best effect, make sure the <code>legend</code> text is concise and to the&nbsp;point.</p>
+					
+					<p class="mini-bio"><a class="fn url" href="../../about/authors/derek-featherstone/index.html"><img class="photo" src="../../i/a/uploads/avatar_7.jpg" alt=""/></a>Derek Featherstone is an internationally-known authority on accessibility and web development, a highly-sought speaker and published&nbsp;author.</p>
+				</section>
+
+				<section id="further-reading">
+					<h1>Further Reading</h1>
+					<ul>
+	
+		
+						<li class="spec"><a href="http://www.w3.org/TR/html401/interact/forms.html">HTML 4.01 Forms Recommendation</a>, W3C, 1999</li>
+	
+		
+						<li class="spec"><a href="http://www.w3.org/TR/html5/forms.html">HTML5 Forms Working Draft</a>, W3C, 2011</li>
+	
+		
+						<li class="article">&#8220;<a href="http://accessibilitytips.com/2008/03/25/using-titles-on-form-fields/">Using titles on form fields</a>&#8221;, <cite>Accessibility Tips</cite>, 25 March 2008</li>
+	
+		
+						<li class="article">&#8220;<a href="http://articles.sitepoint.com/article/fancy-form-design-css">Fancy Form Design Using CSS</a>&#8221;, <cite>Sitepoint</cite>, 26 June 2008</li>
+	
+					</ul>
+				</section>
+			</div>
+			
+		</article>
+									<section id="comments" style="display: none">
+					<header>
+						<h1 class="question">How do you use fieldset and&nbsp;legend?</h1>
+					</header>
+					<a id="comment-loader" data-include-on-tap data-replace="/comments/a-legendary-misunderstanding/" data-include-size="5" href="comments/index.html#comments">View comments on this entry and add your own</a>
+				</section>
+								
+
+		
+		
+		
+	   <ul id="pagination">
+	     <li class="prev"><a href="../curing-the-jetblues/index.html"><em>Previous Entry: </em>Curing the&nbsp;jetBlues</a></li>
+	     <li class="next"><a href="../dissecting-a-chattarati-sidebar/index.html"><em>Next Entry: </em>Dissecting a Chattarati&nbsp;Sidebar</a></li>
+	   </ul>
+
+		
+		<footer class="sidebar" role="complementary">
+		
+				
+		<section id="author" class="sidebar-item vcard byline">
+			<h1>Your Sherpa</h1>
+	
+	
+		
+		<h2><a class="fn url" href="../../about/authors/aaron-gustafson/index.html">
+			<img class="photo" src="../../i/a/uploads/avatar_1.jpg" alt=""/>Aaron Gustafson</a></h2>
+		<p>Aaron Gustafson is the Founder <span class="amp">&amp;</span> Tech Lead of Easy Designs, a content-focused web development consultancy, and the author of Adaptive Web&nbsp;Design.</p>
+		<p class="more"><a href="../../about/authors/aaron-gustafson/index.html">More about Aaron</a></p>
+	
+</section>
+
+			
+			
+		
+			
+				
+
+			<section id="share" class="sidebar-item entry-unrelated">
+
+				<h1>Share</h1>
+
+				<p id="twitter"><a href="https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fwebstandardssherpa.com%2Freviews%2Fa-legendary-misunderstanding%2F&amp;source=tweetbutton&amp;text=A+Legendary+Misunderstanding+by+@AaronGustafson&amp;url=http%3A%2F%2Fwebstandardssherpa.com%2Freviews%2Fa-legendary-misunderstanding%2F&amp;via=StandardsSherpa%20%23wssherpa%20%23sherpa6&amp;related=WaSP:Web%20Standards" title="Tweet"><img src="http://cdn.webstandardssherpa.com/i/button-twitter.png" alt=""/></a> <b class="hashtag"><em>Hashtag:</em> #sherpa6</b></p>
+                <p id="facebook"><a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fwebstandardssherpa.com%2Freviews%2Fa-legendary-misunderstanding%2F" title="Share on Facebook"><img src="http://cdn.webstandardssherpa.com/i/button-facebook.png" alt=""/></a></p>
+				<p id="linkedin"><a href="https://www.linkedin.com/cws/share?url=http%3A%2F%2Fwebstandardssherpa.com%2Freviews%2Fa-legendary-misunderstanding%2F&amp;original_referer=http%3A%2F%2Fwebstandardssherpa.com%2Freviews%2Fa-legendary-misunderstanding%2F" title="Share on LinkedIn"><img src="http://cdn.webstandardssherpa.com/i/button-linkedin.png" alt=""/></a></p>
+				<p id="google_plus"><a href="https://plus.google.com/share?url=http%3A%2F%2Fwebstandardssherpa.com%2Freviews%2Fa-legendary-misunderstanding%2F" title="Share on Google Plus"><img src="http://cdn.webstandardssherpa.com/i/button-googleplus.png" alt=""/></a></p>
+			</section>
+			
+			
+						<section id="standards-fact" class="sidebar-item entry-unrelated">
+
+				<h1>Standards Fact</h1>
+
+
+				<p>A 2006 study found&nbsp;that the majority of small and mid-sized businesses were not aware of the existance of legal requirements for website&nbsp;accessibility.</p>
+
+			</section>
+
+			
+	<section id="submit-a-site" class="sidebar-item entry-unrelated">
+		<p><a href="../../submit-a-site/index.html"><img src="../../i/feed-shirley-222x99.png" alt="Submit a site for Review" /></a></p>
+	</section>
+
+
+
+		</footer>
+	
+	  </div>
+  		<form style="display: none" id="search-form" method="post" action="../../index.html"  >
+<div class='hiddenFields'>
+<input type="hidden" name="ACT" value="6" />
+<input type="hidden" name="XID" value="ea4f8160e10b95f644eba32520943c9c41c0f770" />
+<input type="hidden" name="RES" value="10" />
+<input type="hidden" name="meta" value="vJed+IEhaFn3W7jNVVY8C6VK4KKB0doGerxtt+3TXJkJkrK5M3OFhLNfv7UrH+uJhVYy/SM2Y8CEBzxS9ZAY+5Ry234MoWdF0KwpptDKKX/rJJg1NP4Y7SntDPwMKWd0mrV/+nbWgdpLXyGAXHtWDd/W8QMHWePL8qfhqCpJzaK4pU2LxFEhOj26ZDN4P+8d8hXffYqEVMiMRDrkUYAlZAa+r08a/igafmWKpfXqcmFAHWq/qsh+zoaTz9V6wiUJl2MMAdfHTEZ76nZbWvE5NUZpcvtxRexke8gSzhsFUK46dJJ8pJfmOvPccKB8bfwmBU4cgAZ668OleVhPUZRHiYhGfX21C2DodUFydLdhuEPR2Upj1jdw5RfdVF8nWXwA5G5T4DRd4xKMtKvVvr1BpJKZ37Gid+DBZjiqIcAhYCY=" />
+<input type="hidden" name="site_id" value="1" />
+</div>
+
+
+		<p role="search">
+			<label for="query">Looking for something?</label>
+			<input type="search" name="keywords" id="query" value=""/>
+			<button type="submit">Search</button>
+		</p>
+	</form>
+
+    	<nav id="nav-account" style="display: none" role="navigation">
+		<ul class="buttons">
+	
+			<li><a href="../../sign-up/index.html" style="display: none">Sign up</a></li>
+	
+	
+			<li><a href="../../log-in/index.html" style="display: none">Log in</a></li>
+	
+		</ul>
+	</nav>
+  <footer role="contentinfo" id="page-footer">
+	<div id="site-info">
+			<div id="elevator-pitch" class="footer-item">
+
+		<p>Web Standards Sherpa&rsquo;s experts provide helpful, pragmatic and up-to-date advice on best practices for web professionals everywhere.</p>
+<ul class="more">
+<li><a href="../../about/index.html">More about us</a></li>
+<li><a href="../../contact/index.html" style="display: none">Contact us</a></li>
+</ul>
+
+	</div>
+			<nav id="nav-complete" role="navigation">
+		<section class="participate" style="display: none">
+			<h1>Participate</h1>
+			<ul>
+				<li><a href="../../submit-a-site/index.html">Submit a site</a></li>
+				<li><a href="../../submit-a-question/index.html">Submit a question</a></li>
+				<li><a href="../../sign-up/index.html" style="display: none">Sign up</a><a href="../../log-in/index.html" style="display: none">Log in</a></li>
+				
+			</ul>
+		</section>
+		<section class="learn">
+			<h1>Learn</h1>
+			<ul>
+				<li><mark><a href="../index.html">Reviews</a></mark></li>
+				<li><a href="../../ask-the-sherpas/index.html">Ask Sherpas</a></li>
+				<li><a href="../../about/authors/index.html">Authors</a></li>
+				<li><a href="../../glossary/index.html">Glossary</a></li>
+				
+			</ul>
+		</section>
+	</nav>
+
+			<section id="sponsors" class="footer-item">
+
+		<h1>We thank our sponsors</h1>
+
+				<ol class="partners">					<li>
+											<a href="http://www.microsoft.com"><img src="../../i/p/microsoft-mono.png" alt="Microsoft"/></a>
+										</li>
+				
+									<li>
+											<a href="http://mailchimp.com"><img src="../../i/p/mc-mono.png" alt="MailChimp"/></a>
+										</li>
+				
+									<li>
+											<a href="http://developer.mozilla.org"><img src="../../i/p/mozilla-mono.png" alt="Mozilla"/></a>
+										</li>
+				
+									<li>
+											<a href="http://mediatemple.net"><img src="../../i/p/mt-mono.png" alt="Media Temple"/></a>
+										</li>
+				</ol>
+
+	</section>
+	</div>
+	<div id="terms" class="source-org vcard">
+		<p id="ownership"><a xmlns:dct="http://purl.org/dc/terms/" href="../../index.html" property="dct:title" rel="cc:attributionURL">Web Standards Sherpa</a> is an outreach effort by the <a class="org fn url" xmlns:cc="http://creativecommons.org/ns#" href="http://webstandards.org" property="cc:attributionName">Web Standards Project (WaSP)<img src="../../i/WaSP-logo-mono.png" alt="" /></a>.</p>
+<!--		<p id="network">This site is a proud member of the <a rel="license" href="http://network.smashingmagazine.com/">Smashing Network<img src="/i/p/smashing-mono.png" alt="" /></a>.</p> -->
+		<p id="license">The content of this site is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons<img src="../../i/license.png" alt="" /></a>.</p>
+	</div>
+	
+  </footer>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+	<script>window.jQuery || document.write("<script src='../../j/jquery.js'>\x3C/script>")</script>
+	<script src="../../j/main.js"></script>
+	
+					<script>(function(e,t){var n=t(jQuery),r=typeof define=="function"&&define.amd;r?define(e,["jquery"],n):(this.jQuery||this.$||this)[e]=n})("jail",function(e){function s(e,n){var r=!1;!n||(r=n.data("triggerElem")),!!r&&typeof r.on=="function"&&(r.on(e.event+"."+e.id,{options:e,images:n},u),t.on("resize."+e.id,{options:e,images:n},u))}function o(e){var t=0;if(e.length===0)return;for(;;){if(t===e.length)break;e[t].getAttribute("data-src")?t++:e.splice(t,1)}}function u(n){var i=n.data.images,u=n.data.options;i.data("poller",setTimeout(function(){r=e.extend({},i),o(r),e(r).each(function(){if(this===window)return;f(u,this,r)});if(a(r)){e(n.currentTarget).unbind(n.type+"."+u.id);return}if(u.event!=="scroll"){var l=/scroll/i.test(u.event)?i.data("triggerElem"):t;u.event="scroll",i.data("triggerElem",l),s(u,e(r))}},u.timeout))}function a(t){var n=!0;return e(t).each(function(){!e(this).attr("data-src")||(n=!1)}),n}function f(n,r,i){var s=e(r),o=/scroll/i.test(n.event)?i.data("triggerElem"):t,u=!0;n.loadHiddenImages||(u=h(s,o,n)&&s.is(":visible")),u&&l(o,s,n.offset)&&c(n,s)}function l(e,t,n){var r=e[0]===window,i=r?{top:0,left:0}:e.offset(),s=i.top+(r?e.scrollTop():0),o=i.left+(r?e.scrollLeft():0),u=o+e.width(),a=s+e.height(),f=t.offset(),l=t.width(),c=t.height();return s-n<=f.top+c&&a+n>=f.top&&o-n<=f.left+l&&u+n>=f.left}function c(t,n){var s=new Image;s.onload=function(){n.hide().attr("src",s.src),n.removeAttr("data-src"),t.effect?(t.speed?n[t.effect](t.speed):n[t.effect](),n.css("opacity",1),n.show()):n.show(),o(r),!t.callbackAfterEachImage||t.callbackAfterEachImage.call(this,n,t),a(r)&&!!t.callback&&!i&&(t.callback.call(e.jail,t),i=!0)},s.src=n.attr("data-src")}function h(n,i,o){var u=n.parent(),a=!0;while(u.length&&u.get(0).nodeName.toUpperCase()!=="BODY"){if(u.css("overflow")==="hidden"){if(!l(u,n,o.offset)){a=!1;break}}else if(u.css("overflow")==="scroll"&&!l(u,n,o.offset)){a=!1,e(r).data("triggerElem",u),o.event="scroll",s(o,e(r));break}if(u.css("visibility")==="hidden"||n.css("visibility")==="hidden"){a=!1;break}if(i!==t&&u===i)break;u=u.parent()}return a}var t=e(window),n={id:"jail",timeout:1,effect:!1,speed:400,triggerElement:null,offset:0,event:"load",callback:null,callbackAfterEachImage:null,placeholder:!1,loadHiddenImages:!1},r=[],i=!1;return e.jail=function(t,r){var i=t||{},s=e.extend({},n,r);e.jail.prototype.init(i,s),/^(load|scroll)/.test(s.event)?e.jail.prototype.later.call(i,s):e.jail.prototype.onEvent.call(i,s)},e.jail.prototype.init=function(n,r){n.data("triggerElem",r.triggerElement?e(r.triggerElement):t),!r.placeholder||n.each(function(){e(this).attr("src",r.placeholder)})},e.jail.prototype.onEvent=function(t){var n=this;t.triggerElement?s(t,n):n.on(t.event+"."+t.id,{options:t,images:n},function(t){var n=e(this),i=t.data.options,s=t.data.images;r=e.extend({},s),c(i,n),e(t.currentTarget).unbind(t.type+"."+i.id)})},e.jail.prototype.later=function(t){var n=this;setTimeout(function(){r=e.extend({},n),n.each(function(){f(t,this,n)}),t.event="scroll",s(t,n)},t.timeout)},e.fn.jail=function(t){return new e.jail(this,t),r=[],this},e.jail});
+
+(function($){$("img.jail").jail({offset:100});}(jQuery));</script>
+				
+			<script src="../../j/live-comment-preview.js" type="text/javascript"></script>
+		
+	
+
+	<!-- Just to see if this works -->
+	<!--[if lte IE 6]><script src="/j/ie6.js"></script><![endif]-->
+
+
+			<script type="text/javascript">
+			  var rpxJsHost = (("https:" == document.location.protocol) ? "https://" : "http://static.");
+			  document.write(unescape("%3Cscript src='" + rpxJsHost + "rpxnow.com/js/lib/rpx.js' type='text/javascript'%3E%3C/script%3E"));
+			</script>
+
+			<script type="text/javascript">
+				RPXNOW.overlay = true;
+		  		RPXNOW.language_preference = "en";
+			  	RPXNOW.init({appId: 'cdnifhbomckchfhfgbpl', xdReceiver: '/rpx_xdcomm.html'});
+			</script>
+
+	<div id="ClickTaleDiv" style="display: none;"></div>
+	<script type="text/javascript">
+		if ( document.location.protocol!='https:' )
+		{
+			$.getScript('http://s.clicktale.net/WRb6.js',function(){
+				if ( typeof ClickTale=='function' )
+				{ClickTale(16473,0.1,"www02");}
+			});
+		}
+	</script>
+</body>
+</html>
+
