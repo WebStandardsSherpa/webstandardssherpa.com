@@ -137,7 +137,7 @@
 			</header>
 			
 			<div class="entry-content">
-				<figure id="figure-17-1"> <img class="jail" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="http://cdn.webstandardssherpa.com/r/17-1.png" /><noscript><img src="http://cdn.webstandardssherpa.com/r/17-1.png" /></noscript> </figure>
+				<figure id="figure-17-1"> <img class="jail" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/r/17-1.png" /><noscript><img src="/r/17-1.png" /></noscript> </figure>
 <p>There was a time when people thought the internet required a <a href="http://www.w3.org/ECommerce/roadmap.html">completely different payment method</a> than the real world. After a very short period of time, everyone came to realize that credit cards were actually quite well-suited to the web, and so the credit card form was born. You&rsquo;ve probably seen such form frequently and always with the same fields:</p>
 <ol>
 <li>Your name</li>
@@ -147,9 +147,9 @@
 </ol>
 <p>Recently, I&rsquo;ve come across several sites who have done away with the credit card type field. Both <a href="http://www.amazon.com">Amazon</a> and <a href="http://github.com">GitHub</a> don&rsquo;t require you to select a credit card type in their form. As you fill in the credit card number, the user interface changes to show the type of credit card being used.</p>
 <p>Amazon waits until the entire credit card number is entered and then displays an icon representing the credit card type.</p>
-<figure id="figure-17-2"> <img class="jail" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="http://cdn.webstandardssherpa.com/r/17-2.png" alt=""/><noscript><img src="http://cdn.webstandardssherpa.com/r/17-2.png" alt=""/></noscript> <figcaption>Amazon&rsquo;s Credit Card Detection</figcaption> </figure>
+<figure id="figure-17-2"> <img class="jail" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/r/17-2.png" alt=""/><noscript><img src="/r/17-2.png" alt=""/></noscript> <figcaption>Amazon&rsquo;s Credit Card Detection</figcaption> </figure>
 <p>GitHub updates the interface a bit faster, waiting until it has enough information to figure out the credit card type. Initially, there are several credit card icons showing. Once the actual credit card type is determined, all of the icons fade except the one representing the credit card type.</p>
-<figure id="figure-17-3"><img class="jail" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="http://cdn.webstandardssherpa.com/r/17-3.png" alt=""/><noscript><img src="http://cdn.webstandardssherpa.com/r/17-3.png" alt=""/></noscript><figcaption>GitHub&rsquo;s Credit Card Detection</figcaption> </figure>
+<figure id="figure-17-3"><img class="jail" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/r/17-3.png" alt=""/><noscript><img src="/r/17-3.png" alt=""/></noscript><figcaption>GitHub&rsquo;s Credit Card Detection</figcaption> </figure>
 <p>This credit card type detection is a nice addition to the standard payment form because it frees up the user from entering what is actually redundant information. It&rsquo;s trivial to determine the type of credit card being used once you understand how credit card numbers work.</p>
 <h2 id="whats-in-a-credit-card-number">What&rsquo;s in a Credit Card Number?</h2>
 <p>Despite looking somewhat random, credit card numbers are actually governed by strict conventions. There is a standard called <a href="http://en.wikipedia.org/wiki/ISO/IEC_7812"><span class="caps">ISO</span>/<span class="caps">IEC</span> 7812</a> that specifies the format for identification numbers on credit cards as well as other card-based identification numbers. The entire identification number is separated into three parts:</p>

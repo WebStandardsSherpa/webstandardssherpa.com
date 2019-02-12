@@ -139,7 +139,7 @@
 			<div class="entry-content">
 				<meta />
 <title>Untitled Document</title>
-<figure id="figure-18-1"> <img class="jail" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="http://cdn.webstandardssherpa.com/r/18-1.png" alt=""/><noscript><img src="http://cdn.webstandardssherpa.com/r/18-1.png" alt=""/></noscript> </figure>
+<figure id="figure-18-1"> <img class="jail" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/r/18-1.png" alt=""/><noscript><img src="/r/18-1.png" alt=""/></noscript> </figure>
 <p>When we think of <abbr title="Cascading Stylesheets"><span class="caps">CSS</span></abbr>, we naturally think of styles. Styles to control layout, color and typography. Even styles to progressively enhance our user experience.</p>
 <p>Lately, when I&#8217;m writing my <span class="caps">CSS</span>, I&#8217;m thinking about a different kind of style: the style I use to actually write my <span class="caps">CSS</span> &hellip; more specifically, my selectors.</p>
 <p>So when I took a look at the reader-submitted portfolio, <a href="http://klvn.org">klvn.org</a>, I was interested in the author&#8217;s <span class="caps">CSS</span> selector style. Kelvin, like many front-end developers, relies heavily on <a href="http://www.w3.org/TR/CSS2/selector.html#id-selectors"><code>id</code> selectors</a> in his portfolio:</p>
@@ -202,7 +202,7 @@
 </ul>
 <h3>Browser Support</h3>
 <p>Attribute selectors enjoy very <a href="http://caniuse.com/css-sel2">solid</a> <a href="http://caniuse.com/css-sel3">support</a> by all modern browsers, including many mobile browsers:</p>
-<figure id="figure-18-2"> <a href="http://caniuse.com/css-sel2"><img class="jail" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="http://cdn.webstandardssherpa.com/r/18-2.png" /><noscript><img src="http://cdn.webstandardssherpa.com/r/18-2.png" /></noscript></a></figure> 
+<figure id="figure-18-2"> <a href="http://caniuse.com/css-sel2"><img class="jail" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/r/18-2.png" /><noscript><img src="/r/18-2.png" /></noscript></a></figure> 
 <ul>
 <li>Chrome 4+</li>
 <li>Firefox 2+</li>
@@ -247,7 +247,7 @@
 <h2>Targeting Child Elements</h2>
 <p><a href="http://msdn.microsoft.com/en-us/library/aa358819(v=vs.85).aspx">Child combinator selectors</a> target <span class="caps">HTML</span> elements based on an element&#8217;s position in the document tree, specifically an element that is a direct child of another element.</p>
 <p>Before we examine how <a href="http://klvn.org">klvn.org</a> could use child selectors, let&#8217;s first consider a generic example of a dropdown menu, where the parent level has a different style from the child:</p>
-<!-- NEED TO UPDATE STYLES / REMOVE INLINE STYLE --> <figure id="figure-18-3"> <img class="jail" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="http://cdn.webstandardssherpa.com/r/18-3.png" alt=""/><noscript><img src="http://cdn.webstandardssherpa.com/r/18-3.png" alt=""/></noscript><figcaption>Example of a dropdown menu</figcaption></figure>
+<!-- NEED TO UPDATE STYLES / REMOVE INLINE STYLE --> <figure id="figure-18-3"> <img class="jail" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/r/18-3.png" alt=""/><noscript><img src="/r/18-3.png" alt=""/></noscript><figcaption>Example of a dropdown menu</figcaption></figure>
 <p>I would mark this up with nested <code>ul</code>s:</p>
 <pre class="html"><code>&lt;ul&gt;
   &lt;li&gt;&lt;a href="/about/"&gt;About
@@ -283,7 +283,7 @@
 <p>This selector uses a &ldquo;&gt;&rdquo; combinator to target only children that are one level down in the document structure. In this example, only the parent <code>li</code>s are targeted. Nested <code>li</code>s won&#8217;t inherit any of the styles.</p>
 <h3>Browser Support</h3>
 <p>Child combinators have been <a href="http://caniuse.com/css-sel2">supported since <span class="caps">CSS</span> 2.1</a>:</p>
-<figure id="figure-18-4"> <a href="http://caniuse.com/css-sel2"><img class="jail" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="http://cdn.webstandardssherpa.com/r/18-2.png" /><noscript><img src="http://cdn.webstandardssherpa.com/r/18-2.png" /></noscript></a></figure> 
+<figure id="figure-18-4"> <a href="http://caniuse.com/css-sel2"><img class="jail" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/r/18-2.png" /><noscript><img src="/r/18-2.png" /></noscript></a></figure> 
 <ul>
 <li>Chrome 4+</li>
 <li>Firefox 2+</li>
@@ -344,7 +344,7 @@
 <p>The use of the &ldquo;+&rdquo; combinator in this example targets only those <code>ul</code>s that are the same level in the document tree as the <code>p</code> (siblings) <em>and</em> immediately follows the <code>p</code> in the source markup (adjacent).</p>
 <h3>Browser Support</h3>
 <p>Just like child combinators, adjacent sibling selectors have been <a href="http://caniuse.com/css-sel2">supported since <span class="caps">CSS</span> 2.1</a>:</p>
-<figure id="figure-18-5"><a href="http://caniuse.com/css-sel2"><img class="jail" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="http://cdn.webstandardssherpa.com/r/18-2.png" /><noscript><img src="http://cdn.webstandardssherpa.com/r/18-2.png" /></noscript></a></figure> 
+<figure id="figure-18-5"><a href="http://caniuse.com/css-sel2"><img class="jail" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/r/18-2.png" /><noscript><img src="/r/18-2.png" /></noscript></a></figure> 
 <ul>
 <li>Chrome 4+</li>
 <li>Firefox 2+</li>
@@ -358,7 +358,7 @@
 </ul>
 <h3>Real World Use</h3>
 <p>On <a href="http://klvn.org">klvn.org</a>, there is a section with three columns:</p>
-<figure id="figure-18-5"><img class="jail" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="http://cdn.webstandardssherpa.com/r/18-4.png" alt=""/><noscript><img src="http://cdn.webstandardssherpa.com/r/18-4.png" alt=""/></noscript><figcaption>Example of three-column section on klvn.org</figcaption></figure>
+<figure id="figure-18-5"><img class="jail" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/r/18-4.png" alt=""/><noscript><img src="/r/18-4.png" alt=""/></noscript><figcaption>Example of three-column section on klvn.org</figcaption></figure>
 <p>The markup for each column is identical, with the exception of the parent elements&#8217; <code>class</code> values:</p>
 <pre class="html"><code>&lt;div id="services"&gt;
   &lt;div class="col1"&gt;	
