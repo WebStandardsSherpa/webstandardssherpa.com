@@ -2290,7 +2290,7 @@ form button {
 /* line 458, ../source/scss/_mobile-first.scss */
 #extra-mile h1 {
   background: url(/c/i/extra-mile-rule.png) center bottom no-repeat;
-  background: url(/c/i/extra-mile-rule.png) center bottom no-repeat, url({site:cdn}/c/i/extra-mile-rule.png) center top no-repeat;
+  background: url(/c/i/extra-mile-rule.png) center bottom no-repeat, url(/c/i/extra-mile-rule.png) center top no-repeat;
   font-size: 1.125em;
   line-height: 1.25;
   margin: -18px 0 11px;
@@ -2846,7 +2846,7 @@ p#allowed-tags {
 
 /* line 890, ../source/scss/_mobile-first.scss */
 .deprecated-notice a {
-  background: url({site:cdn}/c/i/deprecated.png) top left no-repeat;
+  background: url(/c/i/deprecated.png) top left no-repeat;
   display: block;
   width: 41px;
   height: 38px;
